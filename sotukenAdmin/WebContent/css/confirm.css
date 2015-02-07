@@ -1,0 +1,151 @@
+@CHARSET "UTF-8";
+
+body, form {
+     margin:0;
+     padding:0;
+     border:0;
+     outline:0;
+     vertical-align:baseline;
+     background:transparent;
+     font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+}
+
+input, textarea, button{
+     vertical-align:middle;
+     font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+     position:relative;
+     margin: 2px 2px 2px 2px;
+     *margin-right:3px;
+     top:-1px;
+}
+
+textarea {
+    resize: none;
+    overflow: auto;
+    width:99%;
+	height:99%;
+	font-size:80%;
+}
+
+input {
+     height:40px;
+     font-size:100%;
+}
+
+input[type="button"],input[type="submit"] {
+     overflow:visible;
+     padding:3px 3px;
+     font-size:120%;
+}
+
+input[type="checkbox"],input[type="radio"] {
+     border:none;
+     top:-2px;
+     top:0\9;
+     margin-right:2px;
+     margin-right: 0\9;
+     height:20px;
+}
+
+h1{
+	color: #3e84b5;
+	text-shadow: 0 2px 1px #ffffff;
+	font-size: 40px;
+	text-align:center;
+	padding:6px;
+}
+
+a {
+text-decoration: none;
+}
+
+#wrapper {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* table */
+table#kigyoInfo{
+	margin-left: auto;
+ 	margin-right: auto;
+	width:800px;
+}
+table#table1{
+	margin-left: auto;
+ 	margin-right: auto;
+	width:800px;
+}
+table#table2{
+	margin-left: auto;
+ 	margin-right: auto;
+	width:800px;
+
+}
+table#table3{
+	margin-left: auto;
+ 	margin-right: auto;
+	width:800px;
+}
+
+/* td */
+td#td1{
+	height:100px;
+	width:800px;
+}
+td#td30{
+	width:500;
+	border:none;
+}
+td#td31{
+	height:200;
+	width:500;
+	border:none;
+}
+
+
+/* class */
+.table1{
+	width: 100%;
+	border-collapse: collapse;
+}
+.table1 th{
+	width: 110px;
+	text-align: center;
+	font-size: 120%;
+	color: #333;
+	background-color: #eee;
+	border: 1px solid #b9b9b9;
+}
+.table1 td{
+	padding:6px;
+	text-align: left;
+	font-size: 120%;
+	background-color: #fff;
+	border: 1px solid #b9b9b9;
+}
+
+.table2{
+	width: 100%;
+	border-collapse: collapse;
+}
+.table2 th{
+	width: 110px;
+	height:50px;
+	text-align: center;
+	font-size: 120%;
+	color: #333;
+	background-color: #eee;
+	border: 1px solid #b9b9b9;
+}
+.table2 td{
+	padding:6px;
+	text-align: left;
+	font-size: 150%;
+	background-color: #fff;
+	border: 1px solid #b9b9b9;
+}
+.td1{
+	width:17.5px;
+}

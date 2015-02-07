@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+
+body {
+	/* background: #ecebe8; */
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    padding: 0px;
+    color: #696969;
+    margin: 0;
+}
+
+h1{
+	color: #3e84b5;
+	text-shadow: 0 2px 1px #ffffff;
+	font-size: 40px;
+	text-align:center;
+	padding:6px;
+}
+
+a {
+text-decoration: none;
+}
+
+#wrapper {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}

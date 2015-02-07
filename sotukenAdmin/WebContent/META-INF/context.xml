@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Resource name="jdbc/sotukenDB" auth="Container" type="javax.sql.DataSource" driverClassName="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/report?zeroDateTimeBehavior=convertToNull" username="sys" password="sys" maxActive="100" maxIdle="30" maxWait="1000"></Resource>
+</Context>
