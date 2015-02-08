@@ -56,7 +56,7 @@ $(document).ready(function() {
                       maxlength: 3
                   },
                   sikenComment:{
-                      maxlength: 1000
+                      maxlength: 500
                   },
                   theme:{
                       maxlength: 50
@@ -79,7 +79,7 @@ $(document).ready(function() {
                   },
                   kensaComment:{
                 	  digits: true,
-                      maxlength: 1000
+                      maxlength: 3
                   },
                   menNin1:{
                 	  digits: true,
@@ -94,18 +94,16 @@ $(document).ready(function() {
                       maxlength: 3
                   },
                   sitsuComment:{
-                      maxlength: 1000
+                      maxlength: 500
                   },
                   hanseiComment:{
-                	  required: true,
-                      maxlength: 1000
+                      maxlength: 500
                   },
                   kenComment:{
-                      maxlength: 1000
+                      maxlength: 500
                   },
                   jogen:{
-                	  required: true,
-                      maxlength: 1000
+                      maxlength: 500
                   }
 
       },
@@ -161,7 +159,7 @@ $(document).ready(function() {
 		        maxlength: "数字3桁以下で入力してください。"
             },
             sikenComment: {
-            	maxlength: "1000文字以下で入力してください。"
+            	maxlength: "500文字以下で入力してください。"
             },
             theme : {
             	maxlength: "50文字以下で入力してください。"
@@ -183,7 +181,7 @@ $(document).ready(function() {
 		        maxlength: "数字3桁以下で入力してください。"
             },
             kensaComment: {
-            	maxlength: "1000文字以下で入力してください。"
+            	maxlength: "500文字以下で入力してください。"
             },
             menNin1:{
 		        digits: "数値で入力して下さい。",
@@ -198,18 +196,16 @@ $(document).ready(function() {
 		        maxlength: "数字3桁以下で入力してください。"
             },
             sitsuComment: {
-            	maxlength: "1000文字以下で入力してください。"
+            	maxlength: "500文字以下で入力してください。"
             },
             hanseiComment :{
-            	required: "必須項目です。",
-            	maxlength: "1000文字以下で入力してください。"
+            	maxlength: "500文字以下で入力してください。"
             },
             kenComment :{
-            	maxlength: "1000文字以下で入力してください。"
+            	maxlength: "500文字以下で入力してください。"
             },
             jogen:{
-            	required: "必須項目です。",
-            	maxlength: "1000文字以下で入力してください。"
+            	maxlength: "500文字以下で入力してください。"
             }
 
 

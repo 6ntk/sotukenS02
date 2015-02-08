@@ -83,7 +83,7 @@ $(function(){
 		</tr>
 		<tr>
 			<th>名前</th>
-			<td>${km.ui.name}</td>
+			<td>${km.ui.sex}</td>
 		</tr>
 		<tr>
 			<th>卒業年度</th>
@@ -112,7 +112,7 @@ $(function(){
 			および<br />
 			実施試験</b></td>
 
-			<th>何次試験</th>
+			<th>何次試験<br/>必須項目</th>
 			<td><input type="radio" name="nanji" value="1" onclick="changeDisabled()" />一次試験　
 			<input type="radio" name="nanji" value="2"  onclick="changeDisabled()"/>二次試験　
 			<input type="radio" name="nanji" value="3"  onclick="changeDisabled()"/>三次試験　
@@ -123,12 +123,12 @@ $(function(){
 			</td>
 		</tr>
 		<tr>
-			<th>実施日</th>
+			<th>実施日<br/>必須項目</th>
 			<td><p>
-			開始：　<input type="text" value="${JukenHoukokuInfo.dateFrom }" name="dateFrom" id="date_from"/>
+			開始：　<input type="text" value="${jhi.dateFrom }" name="dateFrom" id="date_from"/>
 			</p>
 			<p>
-			終了：　<input type="text" value="${JukenHoukokuInfo.dateTo }" name="dateTo" id="date_to"/>
+			終了：　<input type="text" value="${jhi.dateTo }" name="dateTo" id="date_to"/>
 			</p>
 
 			<!-- エラー表示場所 -->
@@ -136,7 +136,7 @@ $(function(){
 			</td>
 		</tr>
 		<tr>
-			<th>試験種類</th>
+			<th>試験種類<br/>必須項目</th>
 			<td><input type="checkbox" name="testSyu" value="1"/>筆記
 			<input type="checkbox" name="testSyu" value="2"/>作文
 			<input type="checkbox" name="testSyu" value="3"/>適性
@@ -171,7 +171,7 @@ $(function(){
 
 		<tr>
 			<th>日時</th>
-			<td><input type="text" value="${JukenHoukokuInfo.tutiDate }" name="tutiDate" id="date_kekka"/>頃
+			<td><input type="text" value="${jhi.tutiDate }" name="tutiDate" id="date_kekka"/>頃
 			</td>
 		</tr>
 
@@ -235,7 +235,7 @@ $(function(){
 
 	<!-- tableを分割 -->
 	<!-- 4 -->
-	<table id="table4" class="table0">
+	<table id="table4" class="table2">
 
 		<!-- 筆記試験 試験内容 -->
 		<tr >
@@ -329,7 +329,7 @@ $(function(){
 		</tr>
 
 		<tr>
-			<th>反省点</th>
+			<th>反省点<br/>必須項目</th>
 			<td><textarea name="hanseiComment" cols="95" rows="15">${JukenHoukokuInfo.hanseiComment}</textarea></td>
 		</tr>
 
@@ -350,16 +350,16 @@ $(function(){
 		</tr>
 
 		<tr >
-			<th>受験後の<br/>感想と<br/>後輩への<br/>助言</th>
+			<th>受験後の<br/>感想と<br/>後輩への<br/>助言<br/>必須項目</th>
 			<td><textarea name="jogen" cols="95" rows="15">${JukenHoukokuInfo.jogen}</textarea></td>
 		</tr>
 
 	</table><!-- 4 -->
 
 
-	<input type="submit" value="確 認" name="updateKakunin" />
+	<input type="submit" value="確 認" name="updateKakunin" class="button"/>
 
-	<input type="button" value="戻る" onclick="history.back()" />
+	<input type="button" value="戻 る" class="button" onclick="history.back()" />
 </form>
 
 </div>

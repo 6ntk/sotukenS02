@@ -35,10 +35,10 @@
 		<option value="1">曖昧検索</option>
 		<option value="2">完全一致</option>
 	</select>
-	<input type="text" name="name"/>
-	<input type="submit" value="検索" name="teisyutu"/>
+	<input type="text" name="name" class="input"/>
+	<input type="submit" value="検 索" name="teisyutu" class="button"/>
 
-	<table id="table1" class="table01" rules="rows">
+	<table id="table1" class="table01">
 		<tr id="tr1">
 		<th style="width:10%" align="left">企業ID</th>
 		<th style="width:30%" align="left">企業名</th>
@@ -57,7 +57,10 @@
 	</table>
 
 	<hr />
-	<input type="button" value="戻る" onclick="history.back()" />
+
+	<div id="wrapper">
+	<input type="button" value="戻 る" class="button" onclick="history.back()" />
+	</div>
 
 	</form>
 </body>
