@@ -25,7 +25,7 @@
 <!-- 選択企業名表示 -->
 <h2>${km.ki.kigyoName}</h2>
 
-<table id="table1" class="table01" rules="rows">
+<table id="table1" class="table01">
 
 	<tr id="tr1">
 		<th style="width:16%" align="left">受験ID</th>
@@ -48,12 +48,12 @@
 	</c:forEach>
 
 </table>
-${km.resultMsg }
+
 <hr />
 
 <div id="wrapper">
 <form>
-	<input type="button" value="戻る" onclick="history.back()" />
+	<input type="button" value="戻 る" class="button" onclick="history.back()" />
 </form>
 </div>
 

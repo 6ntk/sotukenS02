@@ -169,8 +169,8 @@
 
 	</table>
 
-	<input type="submit" value="登録" name="insertBtn"/>
-	<input type="button" value="戻る" onclick="history.back()" />
+	<input type="submit" value="登 録" name="insertBtn" class="button"/>
+	<input type="button" value="戻 る" class="button" onclick="history.back()" />
 </form>
 
 </div>

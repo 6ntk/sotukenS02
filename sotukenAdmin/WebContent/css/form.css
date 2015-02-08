@@ -10,22 +10,23 @@ body, form {
      font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
 }
 
-input, textarea, button{
-     vertical-align:middle;
-     font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
-     position:relative;
-     margin: 2px 2px 2px 2px;
-     *margin-right:3px;
-     top:-1px;
-}
-
 textarea {
-    resize: none;
-    overflow: auto;
-    width:99%;
+	vertical-align:middle;
+	font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+	position:relative;
+	margin: 2px 2px 2px 2px;
+	*margin-right:3px;
+	top:-1px;
+	resize: none;
+	overflow: auto;
+	width:99%;
 	height:99%;
 	font-size:80%;
-	color: #999;
+	color:#000;
+	border:solid 1px #4A3C8C;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 
 textarea.nodes
@@ -37,20 +38,25 @@ textarea.nodes
 input {
      height:40px;
      font-size:100%;
+     margin:0 2px 0 2px;
 }
 
-input[type="button"],input[type="submit"] {
-     overflow:visible;
-     padding:3px 3px;
-     font-size:120%;
+input[type="text"]{
+	border:0;
+	font-size:1.3em;
+	font-family:Arial, sans-serif;
+	color:#000;
+	border:solid 1px #4A3C8C;
+	width:100%;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 
 input[type="checkbox"],input[type="radio"] {
      border:none;
      top:-2px;
      top:0\9;
-     margin-right:2px;
-     margin-right: 0\9;
      height:20px;
 }
 
@@ -77,12 +83,10 @@ text-decoration: none;
 table#studentInfo{
 	margin-left: auto;
  	margin-right: auto;
-	width:100%;
 }
 table#table1{
 	margin-left: auto;
  	margin-right: auto;
-	width:100%;
 }
 table#table2{
 	margin-left: auto;
@@ -98,37 +102,15 @@ table#table3{
 table#table4{
 	margin-left: auto;
  	margin-right: auto;
-	width:100%;
 	border-top:hidden;
 }
 table#teiDate{
 	margin-left: auto;
  	margin-right: auto;
-	width:100%;
 }
 
 
 /* class */
-.table0{
-	width: 100%;
-	border-collapse: collapse;
-}
-.table0 th{
-	width: 140px;
-	text-align: center;
-	font-size: 120%;
-	color: #333;
-	background-color: #eee;
-	border: 1px solid #b9b9b9;
-}
-.table0 td{
-	padding:6px;
-	text-align: left;
-	font-size: 150%;
-	background-color: #fff;
-	border: 1px solid #b9b9b9;
-}
-
 .table1{
 	width: 100%;
 	border-collapse: collapse;
@@ -149,11 +131,47 @@ table#teiDate{
 	background-color: #fff;
 	border: 1px solid #b9b9b9;
 }
+.table2{
+	width: 100%;
+	border-collapse: collapse;
+}
+.table2 th{
+	width: 140px;
+	text-align: center;
+	font-size: 120%;
+	color: #333;
+	background-color: #eee;
+	border: 1px solid #b9b9b9;
+}
+.table2 td{
+	padding:6px;
+	text-align: left;
+	font-size: 150%;
+	background-color: #fff;
+	border: 1px solid #b9b9b9;
+}
 
 .td1{
 	width:18px;
 }
 
-label.error {
-    color: red;
+.button {
+	font-size: 100%;
+	font-weight:bold;
+	font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+	overflow:visible;
+	width: 100px;
+    height:40px;
+
+	color: #4A3C8C;
+	background: #fff;
+	border: 1px solid #4A3C8C;
+	border-radius: 2px;
 }
+.button:hover {
+	background: #4A3C8C;
+	color:#fff;
+	border: 1px solid #4A3C8C;
+	border-radius: 2px;
+}
+

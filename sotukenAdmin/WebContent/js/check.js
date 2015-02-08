@@ -92,7 +92,7 @@ $(document).ready(function(){
 	var i = 0;
 	while(senmonKamoku[i] != null){
 
-		switch(senmonKamoku[i]){
+		switch(ippanKamoku[i]){
 		case "情報基礎":
 			document.myform["senmonKamoku"][0].checked = true;
 			break;

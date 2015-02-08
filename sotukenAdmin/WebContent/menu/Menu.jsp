@@ -23,6 +23,5 @@
 <p><a href="/sotukenAdmin/kigyoTouroku/kigyoTouroku.jsp">企業登録</a></p>
 <p><a href="/sotukenAdmin/kigyoHenkou/kigyoHenkou.jsp">企業編集</a></p>
 <p><a href="/sotukenAdmin/LoginControl?state=logout">ログアウト</a></p>
-${km.resultMsg }
 </body>
 </html>

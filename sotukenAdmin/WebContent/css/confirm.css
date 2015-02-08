@@ -10,32 +10,28 @@ body, form {
      font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
 }
 
-input, textarea, button{
-     vertical-align:middle;
-     font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
-     position:relative;
-     margin: 2px 2px 2px 2px;
-     *margin-right:3px;
-     top:-1px;
-}
-
 textarea {
-    resize: none;
-    overflow: auto;
-    width:99%;
+	vertical-align:middle;
+	font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+	position:relative;
+	margin: 2px 2px 2px 2px;
+	*margin-right:3px;
+	top:-1px;
+	resize: none;
+	overflow: auto;
+	width:99%;
 	height:99%;
 	font-size:80%;
+	color:#000;
+	border:solid 1px #4A3C8C;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 
 input {
      height:40px;
      font-size:100%;
-}
-
-input[type="button"],input[type="submit"] {
-     overflow:visible;
-     padding:3px 3px;
-     font-size:120%;
 }
 
 input[type="checkbox"],input[type="radio"] {
@@ -70,23 +66,19 @@ text-decoration: none;
 table#kigyoInfo{
 	margin-left: auto;
  	margin-right: auto;
-	width:800px;
 }
 table#table1{
 	margin-left: auto;
  	margin-right: auto;
-	width:800px;
 }
 table#table2{
 	margin-left: auto;
  	margin-right: auto;
-	width:800px;
 
 }
 table#table3{
 	margin-left: auto;
  	margin-right: auto;
-	width:800px;
 }
 
 /* td */
@@ -148,4 +140,39 @@ td#td31{
 }
 .td1{
 	width:17.5px;
+}
+
+.button {
+	font-size: 100%;
+	font-weight:bold;
+	font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+	overflow:visible;
+	width: 100px;
+    height:40px;
+
+	color: #4A3C8C;
+	background: #fff;
+	border: 1px solid #4A3C8C;
+	border-radius: 2px;
+}
+.button:hover {
+	background: #4A3C8C;
+	color:#fff;
+	border: 1px solid #4A3C8C;
+	border-radius: 2px;
+}
+
+.kigyoInput{
+	border:0;
+	font-size:1.3em;
+	font-family:Arial, sans-serif;
+	color:#000;
+	border:solid 1px #4A3C8C;
+	width:100%;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.kigyoInput:focus {
+    border:solid 1px #4A3C8C;
 }

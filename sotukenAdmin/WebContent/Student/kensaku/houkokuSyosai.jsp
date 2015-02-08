@@ -25,7 +25,7 @@
 <div id="wrapper">
 
 <!-- 提出日 -->
-<table id="teiDate" class="table0">
+<table id="teiDate" class="table2">
 		<tr>
 			<th>提出日</th>
 			<td>${km.jhi.teiDate}</td>
@@ -174,7 +174,7 @@
 
 <!-- colspan3 -> colspan2 sにするためにtableを分割 -->
 <!-- 4 -->
-<table id="table4" class="table0">
+<table id="table4" class="table2">
 
 	<!-- 筆記試験 試験内容 -->
 	<tr >
@@ -289,7 +289,7 @@
 
 <!-- 前画面に戻る -->
 <form>
-<input type="button" value="戻る" onclick="history.back()" />
+<input type="button" value="戻 る" class="button" onclick="history.back()" />
 </form>
 
 </div>
