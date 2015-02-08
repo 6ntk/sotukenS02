@@ -74,12 +74,11 @@
 			および<br />
 			実施試験</b></td>
 
-			<th>何次試験</th>
-			<td><input type="radio" name="nanji" value="1" onclick="changeDisabled()" />一次試験　
-			<input type="radio" name="nanji" value="2"  onclick="changeDisabled()"/>二次試験　
-			<input type="radio" name="nanji" value="3"  onclick="changeDisabled()"/>三次試験　
-			<input type="radio" name="nanji" value="4"  onclick="changeDisabled()"/>その他<input type="text" name="nanjiEtc" style="width:15%" disabled="disabled"/>
-			<br/>(必須項目)
+			<th>何次試験<br/>(必須項目)</th>
+			<td><label for="nanji1"><input type="radio" id="nanji1" name="nanji" value="1" onclick="changeDisabled()" />一次試験</label>
+			<label for="nanji2"><input type="radio" id="nanji2" name="nanji" value="2"  onclick="changeDisabled()"/>二次試験</label>
+			<label for="nanji3"><input type="radio" id="nanji3" name="nanji" value="3"  onclick="changeDisabled()"/>三次試験</label>
+			<label for="nanji4"><input type="radio"id="nanji4" name="nanji" value="4"  onclick="changeDisabled()"/>その他</label><input type="text" name="nanjiEtc" style="width:15%" maxlength="100" disabled="disabled"/>
 
 			<!-- エラー表示場所 -->
 			<div id="nanji_error"></div>
@@ -87,22 +86,23 @@
 		</tr>
 
 		<tr>
-			<th>実施日</th>
+			<th>実施日<br/>(必須項目)</th>
 			<td>
-			開始：<input type="text" value="" name="dateFrom"  id="date_from" style="width: 25%"/>
-			終了：<input type="text" value="" name="dateTo"  id="date_to" style="width: 25%"/>
-			<br/>(必須項目)
+			開始:<input type="text" value="" name="dateFrom"  id="date_from" style="width: 25%"/>
+			終了:<input type="text" value="" name="dateTo"  id="date_to" style="width: 25%"/>
+
+			<!-- エラー表示場所 -->
+			<div id="testSyu_error"></div>
 			</td>
 		</tr>
 
 		<tr>
-			<th>試験種類</th>
-			<td><input type="checkbox" name="testSyu" value="1"/>筆記
-			<input type="checkbox" name="testSyu" value="2"/>作文
-			<input type="checkbox" name="testSyu" value="3"/>適性
-			<input type="checkbox" name="testSyu" value="4"/>面接
-			<input type="checkbox" name="testSyu" value="5" onclick="connecttext('testSyuEtc',this.checked);"/>その他<input type="text" name="testSyuEtc" id="testSyuEtc" disabled="disabled" style="width:30%"/>
-			<br/>(必須項目)
+			<th>試験種類<br/>(必須項目)</th>
+			<td><label for="testSyu1"><input type="checkbox" id="testSyu1" name="testSyu" value="1"/>筆記</label>
+			<label for="testSyu2"><input type="checkbox" id="testSyu2" name="testSyu" value="2"/>作文</label>
+			<label for="testSyu3"><input type="checkbox" id="testSyu3" name="testSyu" value="3"/>適性</label>
+			<label for="testSyu4"><input type="checkbox" id="testSyu4" name="testSyu" value="4"/>面接</label>
+			<label for="testSyu5"><input type="checkbox" id="testSyu5" name="testSyu" value="5" onclick="connecttext('testSyuEtc',this.checked);"/>その他</label><input type="text" name="testSyuEtc" id="testSyuEtc" style="width:30%" maxlength="100" disabled="disabled"/>
 
 			<!-- エラー表示場所 -->
 			<div id="testSyu_error"></div>
@@ -119,16 +119,16 @@
 		<tr >
 			<td rowspan="3" width="10"><b>結果通知</b></td>
 			<th>学校宛</th>
-			<td><input type="radio" name="toGa" value="1" />郵送
-			<input type="radio" name="toGa" value="2" />TEL
+			<td><label for="toGa1"><input type="radio" id="toGa1" name="toGa" value="1" />郵送</label>
+			<label for="toGa2"><input type="radio" id="toGa2" name="toGa" value="2" />TEL</label>
 			</td>
 
 		</tr>
 
 		<tr>
 			<th>本人宛</th>
-			<td><input type="radio" name="toGa" value="3" />郵送
-			<input type="radio" name="toGa" value="4" />TEL
+			<td><label for="toGa3"><input type="radio" id="toGa3" name="toGa" value="3" />郵送</label>
+			<label for="toGa4"><input type="radio" id="toGa4" name="toGa" value="4" />TEL</label>
 			</td>
 		</tr>
 
@@ -154,49 +154,49 @@
 		<tr >
 			<td rowspan="2" width="10"><b>一般常識</b></td>
 			<th>科目</th>
-			<td><input type="checkbox" name="ippanKamoku" value="1" />国語
-				<input type="checkbox" name="ippanKamoku" value="2" />数学
-				<input type="checkbox" name="ippanKamoku" value="3" />社会
-				<input type="checkbox" name="ippanKamoku" value="4" />英語
-				<input type="checkbox" name="ippanKamoku" value="5" onclick="connecttext('ippanKamokuEtc',this.checked);"/>その他<input type="text" name="ippanKamokuEtc" id="ippanKamokuEtc" disabled="disabled" style="width:30%"/>
+			<td><label for="ippanKamoku1"><input type="checkbox" id="ippanKamoku1" name="ippanKamoku" value="1" />国語</label>
+				<label for="ippanKamoku2"><input type="checkbox" id="ippanKamoku2" name="ippanKamoku" value="2" />数学</label>
+				<label for="ippanKamoku3"><input type="checkbox" id="ippanKamoku3" name="ippanKamoku" value="3" />社会</label>
+				<label for="ippanKamoku4"><input type="checkbox" id="ippanKamoku4" name="ippanKamoku" value="4" />英語</label>
+				<label for="ippanKamoku5"><input type="checkbox" id="ippanKamoku5" name="ippanKamoku" value="5" onclick="connecttext('ippanKamokuEtc',this.checked);"/>その他</label><input type="text" name="ippanKamokuEtc" id="ippanKamokuEtc" style="width:30%" maxlength="100" disabled="disabled"/>
 			</td>
 		</tr>
 		<tr>
 			<th>時間</th>
-			<td><input type="text" name="ippanTime"  style="width:10%"/>分</td>
+			<td><input type="text" name="ippanTime"  style="width:10%" maxlength="3"/>分</td>
 		</tr>
 
 		<!-- 専門科目 -->
 		<tr>
 			<td rowspan="2" width="10"><b>専門科目</b></td>
 			<th>科目</th>
-			<td><input type="checkbox" name="senmonKamoku" value="1" />情報基礎
-				<input type="checkbox" name="senmonKamoku" value="2" />流れ図
-				<input type="checkbox" name="senmonKamoku" value="3" />コーディング
-				<input type="checkbox" name="senmonKamoku" value="4" onclick="connecttext('senmonKamokuEtc',this.checked);"/>その他<input type="text" name="senmonKamokuEtc" id="senmonKamokuEtc" disabled="disabled" style="width:30%"/>
+			<td><label for="senmonKamoku1"><input type="checkbox" id="senmonKamoku1" name="senmonKamoku" value="1" />情報基礎</label>
+				<label for="senmonKamoku2"><input type="checkbox" id="senmonKamoku2" name="senmonKamoku" value="2" />流れ図</label>
+				<label for="senmonKamoku3"><input type="checkbox" id="senmonKamoku3" name="senmonKamoku" value="3" />コーディング</label>
+				<label for="senmonKamoku4"><input type="checkbox" id="senmonKamoku4" name="senmonKamoku" value="4" onclick="connecttext('senmonKamokuEtc',this.checked);"/>その他</label><input type="text" name="senmonKamokuEtc" id="senmonKamokuEtc" style="width:30%" maxlength="100" disabled="disabled"/>
 			</td>
 		</tr>
 		<tr>
 			<th>時間</th>
-			<td><input type="text" name="senmonTime"  style="width:10%"/>分</td>
+			<td><input type="text" name="senmonTime" style="width:10%" maxlength="3"/>分</td>
 		</tr>
 
 		<!-- その他 -->
 		<tr >
 			<td rowspan="2" width="10"><b>その他</b></td>
 			<th>科目</th>
-			<td><input type="text" name="sonota" style="width:99%"/></td>
+			<td><input type="text" name="sonota" style="width:99%" maxlength="100"/></td>
 		</tr>
 
 		<tr>
 			<th>時間</th>
-			<td><input type="text" name="sonoTime"  style="width:10%"/>分</td>
+			<td><input type="text" name="sonoTime" style="width:10%" maxlength="3"/>分</td>
 		</tr>
 	</table><!-- 3 -->
 
 	<!-- tableを分割 -->
 	<!-- 4 -->
-	<table id="table4" class="table0">
+	<table id="table4" class="table2">
 
 		<!-- 筆記試験 試験内容 -->
 		<tr >
@@ -211,22 +211,22 @@
 
 		<tr >
 			<th>テーマ名</th>
-			<td><input type="text" name="theme"  style="width:99%"/></td>
+			<td><input type="text" name="theme"  style="width:99%" maxlength="100"/></td>
 		</tr>
 
 		<tr>
 			<th>時間</th>
-			<td><input type="text" name="bunTime"  style="width:10%"/>　分</td>
+			<td><input type="text" name="bunTime"  style="width:10%" maxlength="3"/>分</td>
 		</tr>
 
 		<tr>
 			<th>字数</th>
-			<td><input type="text" name="bunRyo"  style="width:10%"/>　字</td>
+			<td><input type="text" name="bunRyo"  style="width:10%" maxlength="4"/>字</td>
 		</tr>
 
 		<tr>
 			<th>完成度</th>
-			<td><input type="text" name="kanseido"  style="width:10%"/>　％</td>
+			<td><input type="text" name="kanseido"  style="width:10%" maxlength="3"/>％</td>
 		</tr>
 
 
@@ -237,16 +237,16 @@
 
 		<tr >
 			<th>検査種類</th>
-			<td><input type="checkbox" name="kensaSyu" value="1" />能力適性
-				<input type="checkbox" name="kensaSyu" value="2" />職業適性
-				<input type="checkbox" name="kensaSyu" value="3" />性格検査
-				<input type="checkbox" name="kensaSyu" value="4" onclick="connecttext('kensaSyuEtc',this.checked);"/>その他<input type="text" name="5" id="kensaSyuEtc"  disabled="disabled" style="width:30%" />
+			<td><label for="kensaSyu1"><input type="checkbox" id="kensaSyu1" name="kensaSyu" value="1" />能力適性</label>
+				<label for="kensaSyu2"><input type="checkbox" name="kensaSyu" id="kensaSyu2" value="2" />職業適性</label>
+				<label for="kensaSyu3"><input type="checkbox" name="kensaSyu" id="kensaSyu3" value="3" />性格検査</label>
+				<label for="kensaSyu4"><input type="checkbox" name="kensaSyu" id="kensaSyu4" value="4" onclick="connecttext('kensaSyuEtc',this.checked);"/>その他</label><input type="text" name="5" id="kensaSyuEtc" style="width:30%" maxlength="100" disabled="disabled"/>
 			</td>
 
 		</tr>
 		<tr>
 			<th>検査時間</th>
-			<td><input type="text" name="kensaTime"  style="width:10%" />分</td>
+			<td><input type="text" name="kensaTime"  style="width:10%" maxlength="3"/>分</td>
 		</tr>
 
 		<tr>
@@ -262,26 +262,26 @@
 
 		<tr >
 			<th>面接人数<br/>企業側</th>
-			<td><input type="text" name="menNin1"  style="width:10%"/>人</td>
+			<td><input type="text" name="menNin1"  style="width:10%" maxlength="3"/>人</td>
 		</tr>
 
 		<tr>
 			<th>面接人数<br/>受験者側</th>
-			<td><input type="text" name="menNin2"  style="width:10%"/>人（自分を含め）</td>
+			<td><input type="text" name="menNin2"  style="width:10%" maxlength="3"/>人（自分を含め）</td>
 		</tr>
 
 		<tr>
 			<th>面接形態</th>
-			<td><input type="checkbox" name="menKatati" value="1" />個人面接
-				<input type="checkbox" name="menKatati" value="2" />集団面接
-				<input type="checkbox" name="menKatati" value="3" />グループ討議
-				<input type="checkbox" name="menKatati" value="4" onclick="connecttext('menkatatiEtc',this.checked);"/>その他<input type="text" name="menkatatiEtc" id="menkatatiEtc" disabled="disabled" style="width:30%"/>
+			<td><label for="menKatati1"><input type="checkbox" id="menKatati1" name="menKatati" value="1" />個人面接</label>
+				<label for="menKatati2"><input type="checkbox" id="menKatati2" name="menKatati" value="2" />集団面接</label>
+				<label for="menKatati3"><input type="checkbox" id="menKatati3" name="menKatati" value="3" />グループ討議</label>
+				<label for="menKatati4"><input type="checkbox" id="menKatati4" name="menKatati" value="4" onclick="connecttext('menkatatiEtc',this.checked);"/>その他</label><input type="text" name="menkatatiEtc" id="menkatatiEtc" style="width:30%" maxlength="100" disabled="disabled"/>
 			</td>
 		</tr>
 
 		<tr>
 			<th>面接時間</th>
-			<td><input type="text" name="menTime"  style="width:10%"/>分</td>
+			<td><input type="text" name="menTime" style="width:10%" maxlength="3"/>分</td>
 		</tr>
 
 
@@ -291,7 +291,7 @@
 		</tr>
 
 		<tr>
-			<th>反省点</th>
+			<th>反省点<br/>(必須項目)</th>
 			<td><textarea name="hanseiComment" cols="95" rows="10">(必須項目)</textarea></td>
 		</tr>
 
@@ -312,16 +312,17 @@
 		</tr>
 
 		<tr >
-			<th>受験後の<br/>感想と<br/>後輩への<br/>助言</th>
+			<th>受験後の<br/>感想と<br/>後輩への<br/>助言<br/>(必須項目)</th>
 			<td><textarea name="jogen" cols="95" rows="10">(必須項目)</textarea></td>
 		</tr>
 
 	</table><!-- 4 -->
 
-	<!-- ボタン -->
-	<input type="submit" value="確 認" name="insertKakunin" />
-	<input type="button" value="戻 る" onclick="history.back()" />
+	<br/>
 
+	<!-- ボタン -->
+	<input type="submit" value="確 認" name="insertKakunin" class="button"/>
+	<input type="button" value="戻 る" class="button" onclick="history.back()" />
 </form>
 
 </div>

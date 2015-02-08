@@ -37,7 +37,7 @@
 			<td>${KigyoInfo.kigyoName }</td>
 		</tr>
 		<tr>
-			<th>企業名<br />（ふりがな）</th>
+			<th>企業名<br />(ふりがな)</th>
 			<td>${KigyoInfo.kigyoFuri }</td>
 		</tr>
 		<tr>
@@ -49,8 +49,8 @@
 
 	<p>登録してよろしいですか</p>
 
-	<input type="submit" value="登録" name="kigyoHensyuKakunin"/>
-	<input type="button" value="戻る" onclick="history.back()" />
+	<input type="submit" value="登 録" name="kigyoHensyuKakunin" class="button" />
+	<input type="button" value="戻 る" class="button" onclick="history.back()" />
 
 </form>
 
