@@ -39,7 +39,7 @@
 			<td>${km.ki.kigyoName }</td>
 		</tr>
 		<tr>
-			<th>企業名<br />(ふりがな)</th>
+			<th>企業名<br />（ふりがな）</th>
 			<td>${km.ki.kigyoFuri }</td>
 		</tr>
 		<tr>
@@ -51,9 +51,9 @@
 
 	<hr />
 
-	<input type="submit" value="編 集" name="kigyoHensyu" class="button"/>
-	<input type="submit" value="削 除" name="kigyoDelete" class="button"/>
-	<input type="button" value="戻 る" class="button" onclick="history.back()"/>
+	<input type="submit" value="編集" name="kigyoHensyu"/>
+	<input type="submit" value="削除" name="kigyoDelete"/>
+	<input type="button" value="戻る" onclick="history.back()"/>
 
 </form>
 

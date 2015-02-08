@@ -170,10 +170,10 @@
 
 </table>
 
-<input type="submit" value="登 録" name="insertBtn" class="button"/>
-<input type="submit" value="変 更" name="updateBtn" class="button"/>
-<input type="submit" value="削 除" name="deleteBtn" class="button"/>
-<input type="button" value="戻 る" class="button" onclick="history.back()" />
+<input type="submit" value="登録" name="insertBtn"/>
+<input type="submit" value="変更" name="updateBtn"/>
+<input type="submit" value="削除" name="deleteBtn"/>
+<input type="button" value="戻る" onclick="history.back()" />
 </form>
 
 </body>

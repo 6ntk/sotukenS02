@@ -10,7 +10,7 @@ body {
 }
 
 a {
-	text-decoration: none;
+text-decoration: none;
 }
 
 #globalnavi{
@@ -27,7 +27,6 @@ a {
 	background-color:#4A3C8C;
 	color: white;
 	font-size: 120%;
-	border-radius: 2px;
 }
 
 #globalnavi a:hover{

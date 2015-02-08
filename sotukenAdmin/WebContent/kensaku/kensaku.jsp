@@ -35,10 +35,10 @@
 		<option value="1">曖昧検索</option>
 		<option value="2">完全一致</option>
 	</select>
-	<input type="text" name="name" class="input"/>
-	<input type="submit" value="検 索" class="button"/>
+	<input type="text" name="name"/>
+	<input type="submit" value="検索"/>
 
-	<table id="table1" class="table01">
+	<table id="table1" class="table01" rules="rows">
 	<tr id="tr1">
 		<th style="width:10%" align="left">企業ID</th>
 		<th style="width:30%" align="left">企業名</th>
@@ -57,11 +57,12 @@
 
 	</c:forEach>
 	</table>
+	${km.resultMsg }
 
 	<hr />
 
 	<div id="wrapper">
-	<input type="button" value="戻 る" class="button" onclick="history.back()" />
+	<input type="button" value="戻る" onclick="history.back()" />
 	</div>
 
 </form>

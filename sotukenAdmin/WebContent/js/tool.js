@@ -1,16 +1,16 @@
-
 //チェックボックス
 function connecttext( textid, ischecked ) {
+	   if( ischecked == true ) {
+	      // チェックが入っていたら有効化
+	      document.getElementById(textid).disabled = false;
+	   }
+	   else {
+	      // チェックが入っていなかったら無効化
+	      document.getElementById(textid).disabled = true;
+	   }
+	}
 
-   if( ischecked == true ) {
-      // チェックが入っていたら有効化
-      document.getElementById(textid).disabled = false;
-   }
-   else {
-      // チェックが入っていなかったら無効化
-      document.getElementById(textid).disabled = true;
-   }
-}
+
 
 //ラジオボタン
 function changeDisabled() {
@@ -20,20 +20,19 @@ function changeDisabled() {
         document.myform["nanjiEtc"].disabled = true;
     }
 }
+window.onload = changeDisabled;
 
 //でーとたいむぴっかー
-$(function (){
-
+$(function(){
 	$('#date_from').datetimepicker();
 	$('#date_to').datetimepicker();
 	$('#date_kekka').datetimepicker();
-
 });
 
 //textarea初期値(textareaクリックすると消える奴)
 function setupTextareaDes() {
     var textareas = document.getElementsByTagName("textarea");
-    for (i = 0; i < textareas.length; i++) {
+    for (var i = 0; i < textareas.length; i++) {
         if (textareas[i].className != "nodes") {
             textareas[i].onfocus = function (event) { return TextareaDes(this); };
         }
@@ -46,13 +45,3 @@ function TextareaDes(from) {
     from.onfocus = function (event) {};// これ以降呼び出されないように、自殺。
     return;
 }
-
-//
-$(function($) {
-    $('tbody tr[data-href]').addClass('clickable').delegate('*', 'click', function() {
-        if ( this.tagName !== 'A' ) {
-            window.location = $(this).parents('tr').data('href');
-        }
-        return false;
-    });
-});

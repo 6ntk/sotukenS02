@@ -15,7 +15,7 @@
 
 <h1>ユーザー一覧</h1>
 
-<table id="table1" class="table01">
+<table id="table1" class="table01" rules="rows">
 
 	<tr id="tr1">
 		<th style="width:50%" align="left">学籍番号</th>
@@ -33,7 +33,7 @@
 
 <div id="wrapper">
 <form>
-<input type="button" value="戻 る" class="button" onclick="history.back()" />
+<input type="button" value="戻る" onclick="history.back()" />
 </form>
 </div>
 

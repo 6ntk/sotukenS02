@@ -66,8 +66,8 @@
 </table>
 
 登録してよろしいですか？
-<input type="submit" value="登 録" name="updateKakuninTouroku" class="button"/>
-<input type="button" value="戻 る" class="button" onclick="history.back()" />
+<input type="submit" value="登録" name="updateKakuninTouroku"/>
+<input type="button" value="戻る" onclick="history.back()" />
 </form>
 
 </body>

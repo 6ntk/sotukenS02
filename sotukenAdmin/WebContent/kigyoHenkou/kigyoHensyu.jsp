@@ -11,6 +11,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
+<script type="text/javascript" src="/sotukenAdmin/js/jquery-1.11.0.min.js"></script>
+
+<!-- validate -->
+<script type="text/javascript" src="/sotukenAdmin/js/jquery.validate.min.js"></script>
+
+<!-- tool -->
+<script type="text/javascript" src="/sotukenAdmin/js/toolKigyoValidate.js"></script>
+
 <!-- css -->
 <link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/confirm.css"/>
 
@@ -23,7 +31,7 @@
 
 <div id="wrapper">
 
-<form action="/sotukenAdmin/KigyoServlet" method="post">
+<form action="/sotukenAdmin/KigyoServlet" method="post" id="myform">
 
 	<table id="kigyoInfo" class="table2">
 
@@ -31,24 +39,24 @@
 			<td rowspan="3" class="td1"><b>企業情報</b></td>
 
 			<th>企業名</th>
-			<td><input type="text" name="kigyoName" value="${km.ki.kigyoName }" class="kigyoInput"/></td>
+			<td><input type="text" name="kigyoName" value="${km.ki.kigyoName }" style="width:99%;height: 99%;"/></td>
 
 		</tr>
 		<tr>
-			<th>企業名<br />(ふりがな)</th>
-			<td><input type="text" name="kigyoFuri"value="${km.ki.kigyoFuri }" class="kigyoInput"/></td>
+			<th>企業名<br />（ふりがな）</th>
+			<td><input type="text" name="kigyoFuri"value="${km.ki.kigyoFuri }" style="width:99%;height: 99%;"/></td>
 		</tr>
 		<tr>
 			<th>住所</th>
-			<td><input type="text" name="address" value="${km.ki.address }" class="kigyoInput"/></td>
+			<td><input type="text" name="address" value="${km.ki.address }" style="width:99%;height: 99%;"/></td>
 		</tr>
 
 	</table>
 
 	<hr />
 
-	<input type="submit" value="確 認" name="kigyoKakunin" class="button"/>
-	<input type="button" value="戻 る" class="button" onclick="history.back()" />
+	<input type="button" value="戻る" onclick="history.back()" />
+	<input type="submit" value="確認" name="kigyoKakunin"/>
 
 </form>
 

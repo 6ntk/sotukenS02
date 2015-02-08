@@ -22,7 +22,7 @@
 	    <th id="menu1" width="15%"><a href="/sotukenAdmin/menu/Menu.jsp">トップ</a></th>
 	    <th id="menu2" width="14%"><a href="/sotukenAdmin/KensakuServlet?page=all">企業検索</a></th>
 	    <th id="menu3" width="14%"><a href="/sotukenAdmin/TempServlet?page=all">一時表一覧</a></th>
-	    <th id="menu4" width="14%"><a href="/sotukenAdmin/HoukokuServlet?page=all">報告書提出</a></th>
+	    <th id="menu4" width="14%"><a href="/sotukenAdmin/HoukokuServlet?page=all">受験報告書提出</a></th>
 	    <th id="menu5" width="14%"><a href="/sotukenAdmin/kigyoTouroku/kigyoTouroku.jsp">企業登録</a></th>
 	    <th id="menu6" width="14%"><a href="/sotukenAdmin/KigyoServlet?page=all">企業編集</a></th>
 	    <th id="menu7" width="15%"><a href="/sotukenAdmin/LoginControl?state=logout">ログアウト</a></th>

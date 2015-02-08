@@ -95,7 +95,7 @@
 			および<br />
 			実施試験</b></td>
 
-			<th>何次試験<br/>必須項目</th>
+			<th>何次試験</th>
 			<td><input type="radio" name="nanji" value="1" onclick="changeDisabled()" />一次試験　
 			<input type="radio" name="nanji" value="2"  onclick="changeDisabled()"/>二次試験　
 			<input type="radio" name="nanji" value="3"  onclick="changeDisabled()"/>三次試験　
@@ -106,7 +106,7 @@
 			</td>
 		</tr>
 		<tr>
-			<th>実施日<br/>必須項目</th>
+			<th>実施日</th>
 			<td><p>
 			開始：　<input type="text" value="${jhi.dateFrom }" name="dateFrom" id="date_from"/>
 			</p>
@@ -119,7 +119,7 @@
 			</td>
 		</tr>
 		<tr>
-			<th>試験種類<br/>必須項目</th>
+			<th>試験種類</th>
 			<td><input type="checkbox" name="testSyu" value="1"/>筆記
 			<input type="checkbox" name="testSyu" value="2"/>作文
 			<input type="checkbox" name="testSyu" value="3"/>適性
@@ -218,7 +218,7 @@
 
 	<!-- tableを分割 -->
 	<!-- 4 -->
-	<table id="table4" class="table2">
+	<table id="table4" class="table0">
 
 		<!-- 筆記試験 試験内容 -->
 		<tr >
@@ -312,7 +312,7 @@
 		</tr>
 
 		<tr>
-			<th>反省点<br/>必須項目</th>
+			<th>反省点</th>
 			<td><textarea name="hanseiComment" cols="95" rows="15">${JukenHoukokuInfo.hanseiComment}</textarea></td>
 		</tr>
 
@@ -333,14 +333,14 @@
 		</tr>
 
 		<tr >
-			<th>受験後の<br/>感想と<br/>後輩への<br/>助言<br/>必須項目</th>
+			<th>受験後の<br/>感想と<br/>後輩への<br/>助言</th>
 			<td><textarea name="jogen" cols="95" rows="15">${JukenHoukokuInfo.jogen}</textarea></td>
 		</tr>
 
 	</table><!-- 4 -->
 
-	<input type="submit" value="確 認" name="updateKakunin" class="button"/>
-	<input type="button" value="戻 る" class="button" onclick="history.back()"/>
+	<input type="submit" value="確 認" name="updateKakunin" />
+	<input type="button" value="戻る" onclick="history.back()" />
 </form>
 </body>
 </html>
