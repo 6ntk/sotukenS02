@@ -33,7 +33,7 @@ $(function (){
 //textarea初期値(textareaクリックすると消える奴)
 function setupTextareaDes() {
     var textareas = document.getElementsByTagName("textarea");
-    for (i = 0; i < textareas.length; i++) {
+    for (var i = 0; i < textareas.length; i++) {
         if (textareas[i].className != "nodes") {
             textareas[i].onfocus = function (event) { return TextareaDes(this); };
         }
