@@ -50,7 +50,7 @@
 
 <div id="wrapper">
 <form>
-	<input type="button" value="戻る" onclick="history.back()" />
+	<input type="button" value="戻 る" class="button" onclick="history.back()" />
 </form>
 </div>
 

@@ -21,7 +21,7 @@
 <h1>一時表一覧</h1>
 
 <!-- table -->
-<table id="table1" class="table01" rules="rows">
+<table id="table1" class="table01">
 
 	<tr id="tr1">
 	<th style="width:10%" align="left">受験ID</th>
@@ -52,7 +52,7 @@
 
 <div id="wrapper">
 <form>
-<input type="button" value="戻る" onclick="history.back()" />
+<input type="button" value="戻 る" class="button" onclick="history.back()" />
 </form>
 </div>
 

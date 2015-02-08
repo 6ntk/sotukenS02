@@ -5,11 +5,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/login.css"/>
+
 <title>logout</title>
 </head>
 <body>
+
 <h1>ログアウト</h1>
+
 <p>ログアウトしました</p>
+
 <p ><a href="/sotukenAdmin/AdminLogin/login.jsp">ログイン画面にもどる</a></p>
+
 </body>
 </html>
