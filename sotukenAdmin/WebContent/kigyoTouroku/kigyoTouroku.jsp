@@ -14,6 +14,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
+<!-- <script type="text/javascript" src="/sotukenAdmin/js/jquery-2.1.1.min.js"></script> -->
+<script type="text/javascript" src="/sotukenAdmin/js/jquery-1.11.0.min.js"></script>
+
+<!-- validate -->
+<script type="text/javascript" src="/sotukenAdmin/js/jquery.validate.min.js"></script>
+
+<!-- tool -->
+<script type="text/javascript" src="/sotukenAdmin/js/toolKigyoValidate.js"></script>
+
 <!-- css -->
 <link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/confirm.css"/>
 
@@ -27,7 +36,7 @@
 
 <div id="wrapper">
 
-<form action="/sotukenAdmin/KigyoServlet" method="post">
+<form action="/sotukenAdmin/KigyoServlet" method="post" id="myform">
 
 	<table id="kigyoInfo" class="table2">
 
