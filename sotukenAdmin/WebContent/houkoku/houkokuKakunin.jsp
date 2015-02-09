@@ -170,6 +170,8 @@
 
 	</table>
 
+	<hr/>
+
 	<input type="submit" value="登 録" name="insertBtn" class="button"/>
 	<input type="button" value="戻 る" class="button" onclick="history.back()" />
 </form>

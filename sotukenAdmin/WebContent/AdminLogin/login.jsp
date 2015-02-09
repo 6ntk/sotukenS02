@@ -9,28 +9,30 @@
 <!-- css -->
 <link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/login.css"/>
 
-<title>ログイン</title>
+<title>受験報告書</title>
 </head>
 <body>
+
+<h1>受験報告書 閲覧・提出</h1>
+
 
 <div id="wrapper">
 
 	<form name="login-form" class="login-form" action="/sotukenAdmin/LoginControl" method="post">
 
-		<div class="header">
-		<h1>ログイン</h1>
-		</div>
+	<table width="100%">
+	<tr>
+		<th width="30%">管理者ID</th><td><input name="user" type="text" class="input" /></td>
+	</tr>
 
-		<div class="content">
-		<span>学籍番号</span>
-		<input name="user" type="text" class="input username" />
-		<span>パスワード</span>
-		<input name="passwd" type="password" class="input password" />
-		</div>
+	<tr>
+		<th width="30%">パスワード</th><td><input name="passwd" type="password" class="input" /></td>
+	</tr>
+	</table>
 
-		<div class="footer">
-		<input type="submit" name="submit" value="Login" class="button" />
-		</div>
+	<hr />
+
+	<input type="submit" name="submit" value="ログイン" class="button" />
 
 	</form>
 

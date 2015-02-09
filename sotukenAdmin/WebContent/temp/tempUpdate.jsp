@@ -21,6 +21,7 @@
 <!-- datetimepicker -->
 <script src="/sotukenAdmin/js/jquery.datetimepicker.js"></script>
 
+
 <!-- validate -->
 <script type="text/javascript" src="/sotukenAdmin/js/jquery.validate.min.js"></script>
 <script type="text/javascript" src="/sotukenAdmin/js/toolValidate.js"></script>
@@ -51,6 +52,7 @@ $(function(){
 <link rel="stylesheet" href="/sotukenAdmin/css/jquery.datetimepicker.css" />
 
 
+</script>
 
 
 </head>

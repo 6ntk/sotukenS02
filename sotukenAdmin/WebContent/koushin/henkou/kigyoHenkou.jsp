@@ -33,7 +33,7 @@
 		<option value="2">完全一致</option>
 	</select>
 	<input type="text" name="name" class="input"/>
-	<input type="submit" value="検 索" class="button"/>
+	<input type="submit" value="検 索" class="searchButton"/>
 
 	<table id="table1" class="table01">
 	<tr id="tr1">

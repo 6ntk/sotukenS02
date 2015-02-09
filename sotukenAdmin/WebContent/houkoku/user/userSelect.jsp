@@ -29,8 +29,8 @@
 <c:forEach items="${km.uList}" var="item">
 
 	<tr id="tr2">
-		<td style="width:50%"><a href="/sotukenAdmin/HoukokuServlet?page=gakuseki&gakuseki=${item.gakuseki }">${item.gakuseki }</a></td>
-		<td style="width:50%"><a href="/sotukenAdmin/HoukokuServlet?page=gakuseki&gakuseki=${item.gakuseki }">${item.name }</a></td>
+		<td style="width:40%"><a href="/sotukenAdmin/HoukokuServlet?page=gakuseki&gakuseki=${item.gakuseki }">${item.gakuseki }</a></td>
+		<td style="width:60%"><a href="/sotukenAdmin/HoukokuServlet?page=gakuseki&gakuseki=${item.gakuseki }">${item.name }</a></td>
 	</tr>
 </c:forEach>
 

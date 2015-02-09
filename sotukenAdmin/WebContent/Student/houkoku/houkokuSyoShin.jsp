@@ -292,7 +292,7 @@
 
 		<tr>
 			<th>反省点<br/>(必須項目)</th>
-			<td><textarea name="hanseiComment" cols="95" rows="10">(必須項目)</textarea></td>
+			<td><textarea name="hanseiComment" cols="95" rows="10"></textarea></td>
 		</tr>
 
 
@@ -313,12 +313,12 @@
 
 		<tr >
 			<th>受験後の<br/>感想と<br/>後輩への<br/>助言<br/>(必須項目)</th>
-			<td><textarea name="jogen" cols="95" rows="10">(必須項目)</textarea></td>
+			<td><textarea name="jogen" cols="95" rows="10"></textarea></td>
 		</tr>
 
 	</table><!-- 4 -->
 
-	<br/>
+	<hr/>
 
 	<!-- ボタン -->
 	<input type="submit" value="確 認" name="insertKakunin" class="button"/>

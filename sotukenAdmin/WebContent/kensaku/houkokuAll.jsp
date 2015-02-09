@@ -30,21 +30,21 @@
 
 	<tr id="tr1">
 		<th style="width:16%" align="left">受験ID</th>
+		<th style="width:18%" align="left">提出日時</th>
 		<th style="width:16%" align="left">出席番号</th>
 		<th style="width:18%" align="left">氏名</th>
 		<th style="width:16%" align="left">何次試験</th>
-		<th style="width:18%" align="left">提出日時</th>
 		<th style="width:16%" align="left">卒業年度</th>
 	</tr>
 
 	<c:forEach items="${km.ji}" var="item">
 	<tr>
-		<th><a href="/sotukenAdmin/KensakuServlet?page=syosai&juId=${item.juId }">${item.juId }</a></th>
-		<th><a href="/sotukenAdmin/KensakuServlet?page=syosai&juId=${item.juId }">${item.syuNum }</a></th>
-		<th><a href="/sotukenAdmin/KensakuServlet?page=syosai&juId=${item.juId }">${item.name }</a></th>
-		<th><a href="/sotukenAdmin/KensakuServlet?page=syosai&juId=${item.juId }">${item.nanji }</a></th>
-		<th><a href="/sotukenAdmin/KensakuServlet?page=syosai&juId=${item.juId }">${item.teiDate }</a></th>
-		<th><a href="/sotukenAdmin/KensakuServlet?page=syosai&juId=${item.juId }">${item.sotuDate }</a></th>
+		<td style="width:16%"><a href="/sotukenAdmin/KensakuServlet?page=syosai&juId=${item.juId }">${item.juId }</a></td>
+		<td style="width:18%"><a href="/sotukenAdmin/KensakuServlet?page=syosai&juId=${item.juId }">${item.teiDate }</a></td>
+		<td style="width:16%"><a href="/sotukenAdmin/KensakuServlet?page=syosai&juId=${item.juId }">${item.syuNum }</a></td>
+		<td style="width:18%"><a href="/sotukenAdmin/KensakuServlet?page=syosai&juId=${item.juId }">${item.name }</a></td>
+		<td style="width:16%"><a href="/sotukenAdmin/KensakuServlet?page=syosai&juId=${item.juId }">${item.nanji }</a></td>
+		<td style="width:16%"><a href="/sotukenAdmin/KensakuServlet?page=syosai&juId=${item.juId }">${item.sotuDate }</a></td>
 	</tr>
 	</c:forEach>
 
