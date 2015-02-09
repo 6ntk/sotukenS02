@@ -46,7 +46,7 @@
 		<th style="width:30%" align="left">住所</th>
 		</tr>
 
-		<c:forEach items="${km.list}" var="item">
+		<c:forEach items="${sm.list}" var="item">
 			<tr id="tr2">
 			<td style="width:10%"><a href="/sotukenAdmin/StudentServlet?page=allhou&id=${item.id }">${item.id }</a></td>
 			<td style="width:30%"><a href="/sotukenAdmin/StudentServlet?page=allhou&id=${item.id }">${item.kigyoName }</a></td>

@@ -56,6 +56,7 @@ public class SuperClass extends DBAccess {
 	}
 
 
+
 	public void setInsertSql(String insertSql) {
 		this.insertSql = insertSql;
 	}

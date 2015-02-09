@@ -30,6 +30,7 @@ public class StudentServlet extends HttpServlet {
     private HttpSession session;
     private ToJhi tojhi;
     private ToNull tn;
+    private StudentDBManage sm;
 
 	/**
      * @see HttpServlet#HttpServlet()
@@ -42,6 +43,7 @@ public class StudentServlet extends HttpServlet {
         ui = new UserInfo();
         tojhi = new ToJhi();
         tn = new ToNull();
+        sm = new StudentDBManage();
     }
 
 	/**
@@ -113,11 +115,12 @@ public class StudentServlet extends HttpServlet {
 					if(request.getParameter("id") == null){
 						page = "/Student/houkoku/houkoku.jsp";
 						try {
-							km.kigyoDBSelect();
+							sm.kigyoDBSelect();
 						} catch (Exception e1) {
 							// TODO 自動生成された catch ブロック
 							e1.printStackTrace();
 						}
+						request.setAttribute("sm", sm);
 					}else{
 						//検索結果表示JSP
 						page = "/Student/houkoku/houkokuSyoShin.jsp";

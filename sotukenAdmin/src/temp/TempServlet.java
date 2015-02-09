@@ -138,7 +138,6 @@ public class TempServlet extends HttpServlet {
 
 						page = "/temp/tempUpdate.jsp";
 
-						JukenHoukokuInfo jhi = new JukenHoukokuInfo();
 						jhi = (JukenHoukokuInfo) session.getAttribute("JukenHoukokuInfo");
 
 						jhi.setId(Integer.parseInt(request.getParameter("id")));
@@ -149,6 +148,7 @@ public class TempServlet extends HttpServlet {
 							// TODO 自動生成された catch ブロック
 							e.printStackTrace();
 						}
+						session.setAttribute("JukenHoukokuInfo ", jhi);
 					}
 					break;
 
@@ -206,14 +206,15 @@ public class TempServlet extends HttpServlet {
 					tm.jukenSelect(Integer.parseInt(request.getParameter("juId")));
 
 					km.jukenHoukokuInsert(tm.getJhi());
-					String resultMsg = tm.getResultMsg();
 
 					tm.jukenDelete(Integer.parseInt(request.getParameter("juId")));
-					tm.setResultMsg(resultMsg);
+					tm.setResultMsg("");
 				} catch (Exception e) {
 					// TODO 自動生成された catch ブロック
 					e.printStackTrace();
 				}
+
+				request.setAttribute("km", km);
 			}
 
 			//編集
@@ -272,16 +273,18 @@ public class TempServlet extends HttpServlet {
 				jhi = (JukenHoukokuInfo) session.getAttribute("JukenHoukokuInfo");
 
 				try {
-					tm.jukenHoukokuInsert(jhi);
-					String resultMsg = tm.getResultMsg();
-					tm.jukenDelete(jhi.getId());
-					tm.setResultMsg(resultMsg);
+					km.jukenHoukokuInsert(jhi);
+
+					tm.jukenDelete(jhi.getJuId());
+					tm.setResultMsg("");
 
 				} catch (Exception e) {
 					// TODO 自動生成された catch ブロック
 					e.printStackTrace();
 				}
 				session.removeAttribute("JukenHoukokuInfo");
+
+				request.setAttribute("km", km);
 
 
 			}
