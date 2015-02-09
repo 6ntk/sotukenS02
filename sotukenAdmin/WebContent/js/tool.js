@@ -56,3 +56,8 @@ $(function($) {
         return false;
     });
 });
+
+//テーブル
+$(document).ready(function(){
+  $('#table1').dataTable();
+});

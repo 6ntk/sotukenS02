@@ -11,6 +11,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
+<!-- dataTables css-->
+<link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/jquery.dataTables.css"/>
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/site.css"/>
+
+<!-- jquery -->
+<script type="text/javascript" src="/sotukenAdmin/js/jquery-1.11.0.min.js"></script>
+
+<!-- dataTables -->
+<script type="text/javascript" src="/sotukenAdmin/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="/sotukenAdmin/js/datatables.js"></script>
 <!-- css -->
 <link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/site.css"/>
 
@@ -39,13 +50,15 @@
 	<input type="submit" value="検 索" class="searchButton"/>
 
 	<table id="table1" class="table01">
+	<thead>
 	<tr id="tr1">
 		<th style="width:10%" align="left">企業ID</th>
 		<th style="width:30%" align="left">企業名</th>
 		<th style="width:30%" align="left">企業名(ふりがな)</th>
 		<th style="width:30%" align="left">住所</th>
 	</tr>
-
+	</thead>
+<tbody>
 	<c:forEach items="${km.list}" var="item">
 
 		<tr id="tr2">
@@ -56,6 +69,7 @@
 		</tr>
 
 	</c:forEach>
+	</tbody>
 	</table>
 
 	${km.resultMsg }
