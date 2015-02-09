@@ -24,5 +24,6 @@
 <p><a href="/sotukenAdmin/kigyoHenkou/kigyoHenkou.jsp">企業編集</a></p>
 <p><a href="/sotukenAdmin/LoginControl?state=logout">ログアウト</a></p>
 ${km.resultMsg }
+${tm.resultMsg }
 </body>
 </html>

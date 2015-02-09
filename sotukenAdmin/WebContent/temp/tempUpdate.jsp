@@ -21,13 +21,16 @@
 <!-- datetimepicker -->
 <script src="/sotukenAdmin/js/jquery.datetimepicker.js"></script>
 
-
 <!-- validate -->
 <script type="text/javascript" src="/sotukenAdmin/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/sotukenAdmin/js/toolValidate.js"></script>
 
-<link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/jquery.datetimepicker.css" />
+<!-- tool -->
+<script type="text/javascript" src="/sotukenAdmin/js/tool.js"></script>
 
 <script type="text/javascript">
+
+$(function(){
 
 	nanji = '<%=jhi.getNanji() %>';
 	toGa = '<%=jhi.getToGa() %>';
@@ -38,12 +41,17 @@
 	senmonKamoku = '<%=jhi.getSenmonKamoku()%>'.split(",");
 	kensaSyu = '<%=jhi.getKensaSyu()%>'.split(",");
 	menKatati = '<%=jhi.getMenKatati()%>'.split(",");
-
+});
 </script>
 
-<!-- tool -->
-<script type="text/javascript" src="/sotukenAdmin/js/tool.js"></script>
-<script type="text/javascript" src="/sotukenAdmin/js/toolValidate.js"></script>
+<script type="text/javascript" src="/sotukenAdmin/js/check.js"></script>
+
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/form.css"/>
+<link rel="stylesheet" href="/sotukenAdmin/css/jquery.datetimepicker.css" />
+
+
+
 
 </head>
 <body>
@@ -66,7 +74,7 @@
 		</tr>
 		<tr>
 			<th>名前</th>
-			<td>${tm.ui.sex}</td>
+			<td>${tm.ui.name}</td>
 		</tr>
 		<tr>
 			<th>卒業年度</th>
@@ -87,7 +95,7 @@
 		</tr>
 		<tr>
 			<th>住所</th>
-			<td>${km.ki.address}</td>
+			<td>${tm.ki.address}</td>
 		</tr>
 		<tr >
 			<td rowspan="3" width="10">
@@ -99,7 +107,7 @@
 			<td><input type="radio" name="nanji" value="1" onclick="changeDisabled()" />一次試験　
 			<input type="radio" name="nanji" value="2"  onclick="changeDisabled()"/>二次試験　
 			<input type="radio" name="nanji" value="3"  onclick="changeDisabled()"/>三次試験　
-			<input type="radio" name="nanji" value="4"  onclick="changeDisabled()"/>その他　<input type="text" name="nanjiEtc" />
+			<input type="radio" name="nanji" value="4"  onclick="changeDisabled()"/>その他　<input type="text" name="nanjiEtc" disabled="disabled"/>
 
 			<!-- エラー表示場所 -->
 			<div id="nanji_error"></div>
@@ -108,10 +116,10 @@
 		<tr>
 			<th>実施日<br/>必須項目</th>
 			<td><p>
-			開始：　<input type="text" value="${jhi.dateFrom }" name="dateFrom" id="date_from"/>
+			開始：　<input type="text" value="${JukenHoukokuInfo.dateFrom }" name="dateFrom" id="date_from"/>
 			</p>
 			<p>
-			終了：　<input type="text" value="${jhi.dateTo }" name="dateTo" id="date_to"/>
+			終了：　<input type="text" value="${JukenHoukokuInfo.dateTo }" name="dateTo" id="date_to"/>
 			</p>
 
 			<!-- エラー表示場所 -->
@@ -154,7 +162,7 @@
 
 		<tr>
 			<th>日時</th>
-			<td><input type="text" value="${jhi.tutiDate }" name="tutiDate" id="date_kekka"/>頃
+			<td><input type="text" value="${JukenHoukokuInfo.tutiDate }" name="tutiDate" id="date_kekka"/>頃
 			</td>
 		</tr>
 

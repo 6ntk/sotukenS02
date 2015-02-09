@@ -22,6 +22,9 @@
 
 <h1>企業検索 報告書</h1>
 
+<!-- 選択企業名表示 -->
+<h2>${km.ki.kigyoName}</h2>
+
 <table id="table1" class="table01">
 
 	<tr id="tr1">
@@ -45,7 +48,7 @@
 	</c:forEach>
 
 </table>
-
+${km.resultMsg }
 <hr />
 
 <div id="wrapper">

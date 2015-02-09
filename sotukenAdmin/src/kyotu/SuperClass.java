@@ -56,10 +56,13 @@ public class SuperClass extends DBAccess {
 	}
 
 
+	public void setInsertSql(String insertSql) {
+		this.insertSql = insertSql;
+	}
+
 	public void setSelectKigyoAllSql(String selectKigyoAllSql) {
 		this.selectKigyoAllSql = selectKigyoAllSql;
 	}
-
 
 	public void setJukenMaeSql(String jukenMaeSql) {
 		this.jukenMaeSql = jukenMaeSql;
@@ -295,6 +298,7 @@ public class SuperClass extends DBAccess {
 
 		while( getRsResult().next()){
 
+			resultMsg="";
 			UserInfo ui =new UserInfo();
 			ui.setGakuseki(getRsResult().getString("gakuseki"));
 			ui.setName(getRsResult().getString("name"));
@@ -339,6 +343,7 @@ public class SuperClass extends DBAccess {
 	//報告書登録
 	public void jukenHoukokuInsert(JukenHoukokuInfo jhi) throws Exception{
 
+		resultMsg="";
 		String strType = "登録";
 		//接続
 		connect();

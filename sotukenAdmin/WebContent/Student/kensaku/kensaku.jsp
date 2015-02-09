@@ -25,7 +25,7 @@
 <!-- 企業全表示ボタン -->
 <div id="level">
 <ul id="level1">
-	<li><a href="/sotukenAdmin/StudentServlet?page=zen">全表示</a></li>
+	<li><a href="/sotukenAdmin/StudentServlet?page=all">全表示</a></li>
 </ul>
 </div>
 
@@ -49,15 +49,16 @@
 	<c:forEach items="${km.list}" var="item">
 
 		<tr id="tr2">
-		<td style="width:10%"><a href="/sotukenAdmin/StudentServlet?page=zen&id=${item.id }">${item.id }</a></td>
-		<td style="width:30%"><a href="/sotukenAdmin/StudentServlet?page=zen&id=${item.id }">${item.kigyoName }</a></td>
-		<td style="width:30%"><a href="/sotukenAdmin/StudentServlet?page=zen&id=${item.id }">${item.kigyoFuri }</a></td>
-		<td style="width:30%"><a href="/sotukenAdmin/StudentServlet?page=zen&id=${item.id }">${item.address }</a></td>
+		<td style="width:10%"><a href="/sotukenAdmin/StudentServlet?page=all&id=${item.id }">${item.id }</a></td>
+		<td style="width:30%"><a href="/sotukenAdmin/StudentServlet?page=all&id=${item.id }">${item.kigyoName }</a></td>
+		<td style="width:30%"><a href="/sotukenAdmin/StudentServlet?page=all&id=${item.id }">${item.kigyoFuri }</a></td>
+		<td style="width:30%"><a href="/sotukenAdmin/StudentServlet?page=all&id=${item.id }">${item.address }</a></td>
 		</tr>
 
 	</c:forEach>
-	</table>
 
+	</table>
+	${km.resultMsg }
 	<hr />
 
 	<div id="wrapper">

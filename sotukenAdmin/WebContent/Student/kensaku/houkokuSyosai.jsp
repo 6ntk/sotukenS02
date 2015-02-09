@@ -118,7 +118,7 @@
 
 	<tr>
 		<th>日時</th>
-		<td>${tn.jhitn.tutiDate}　頃
+		<td>${tn.jhitn.tutiDate}
 		</td>
 	</tr>
 
@@ -143,7 +143,7 @@
 
 	<tr>
 		<th>時間</th>
-		<td>${tn.jhitn.ippanTime}　分</td>
+		<td>${tn.jhitn.ippanTime}</td>
 	</tr>
 
 	<tr>
@@ -155,7 +155,7 @@
 
 	<tr>
 		<th>時間</th>
-		<td>${tn.jhitn.senmonTime}　分</td>
+		<td>${tn.jhitn.senmonTime}</td>
 	</tr>
 
 	<tr >
@@ -167,7 +167,7 @@
 
 	<tr>
 		<th>時間</th>
-		<td>${tn.jhitn.sonoTime}　分</td>
+		<td>${tn.jhitn.sonoTime}</td>
 	</tr>
 </table><!-- 3 -->
 
@@ -194,17 +194,17 @@
 
 	<tr>
 		<th>時間</th>
-		<td>${tn.jhitn.bunTime}　分</td>
+		<td>${tn.jhitn.bunTime}</td>
 	</tr>
 
 	<tr>
 		<th>字数</th>
-		<td>${tn.jhitn.bunRyo}　字</td>
+		<td>${tn.jhitn.bunRyo}</td>
 	</tr>
 
 	<tr>
 		<th>完成度</th>
-		<td>${tn.jhitn.kanseido}　％</td>
+		<td>${tn.jhitn.kanseido}</td>
 	</tr>
 
 
@@ -220,7 +220,7 @@
 	</tr>
 	<tr>
 		<th>検査時間</th>
-		<td>${tn.jhitn.kensaTime}　分</td>
+		<td>${tn.jhitn.kensaTime}</td>
 	</tr>
 
 	<tr>
@@ -236,12 +236,12 @@
 
 	<tr >
 		<th>面接人数<br/>企業側</th>
-		<td>${tn.jhitn.menNin1}　人</td>
+		<td>${tn.jhitn.menNin1}</td>
 	</tr>
 
 	<tr>
 		<th>面接人数<br/>受験者側</th>
-		<td>${tn.jhitn.menNin2}　人（本人を含め）</td>
+		<td>${tn.jhitn.menNin2}</td>
 	</tr>
 
 	<tr>
@@ -251,7 +251,7 @@
 
 	<tr>
 		<th>面接時間</th>
-		<td>${tn.jhitn.menTime}　分</td>
+		<td>${tn.jhitn.menTime}</td>
 	</tr>
 
 	<tr>

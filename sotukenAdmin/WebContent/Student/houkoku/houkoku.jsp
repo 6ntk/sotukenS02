@@ -25,11 +25,11 @@
 <!-- 企業全表示ボタン -->
 <div id="level">
 <ul id="level1">
-	<li><a href="/sotukenAdmin/StudentServlet?page=zenhou">全表示</a></li>
+	<li><a href="/sotukenAdmin/StudentServlet?page=allhou">全表示</a></li>
 </ul>
 </div>
 
-<form action="/sotuken/AdminServletAdmin" method="post">
+<form action="/sotukenAdmin/StudentServlet" method="post">
 
 	<select name="select">
 		<option value="1">曖昧検索</option>
@@ -48,10 +48,10 @@
 
 		<c:forEach items="${km.list}" var="item">
 			<tr id="tr2">
-			<td style="width:10%"><a href="/sotukenAdmin/StudentServlet?page=zenhou&id=${item.id }">${item.id }</a></td>
-			<td style="width:30%"><a href="/sotukenAdmin/StudentServlet?page=zenhou&id=${item.id }">${item.kigyoName }</a></td>
-			<td style="width:30%"><a href="/sotukenAdmin/StudentServlet?page=zenhou&id=${item.id }">${item.kigyoFuri }</a></td>
-			<td style="width:30%"><a href="/sotukenAdmin/StudentServlet?page=zenhou&id=${item.id }">${item.address }</a></td>
+			<td style="width:10%"><a href="/sotukenAdmin/StudentServlet?page=allhou&id=${item.id }">${item.id }</a></td>
+			<td style="width:30%"><a href="/sotukenAdmin/StudentServlet?page=allhou&id=${item.id }">${item.kigyoName }</a></td>
+			<td style="width:30%"><a href="/sotukenAdmin/StudentServlet?page=allhou&id=${item.id }">${item.kigyoFuri }</a></td>
+			<td style="width:30%"><a href="/sotukenAdmin/StudentServlet?page=allhou&id=${item.id }">${item.address }</a></td>
 			</tr>
 		</c:forEach>
 	</table>

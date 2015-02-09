@@ -19,8 +19,8 @@
 	<table width="100%">
     <tr>
 	    <th id="menu1" width="25%"><a href="/sotukenAdmin/menu/StudentTopMenu.jsp">トップ</a></th>
-	    <th id="menu2" width="25%"><a href="/sotukenAdmin/Student/kensaku/kensaku.jsp">企業検索</a></th>
-	    <th id="menu3" width="25%"><a href="/sotukenAdmin/Student/houkoku/houkoku.jsp">報告書提出</a></th>
+	    <th id="menu2" width="25%"><a href="/sotukenAdmin/StudentServlet?page=all">企業検索</a></th>
+	    <th id="menu3" width="25%"><a href="/sotukenAdmin/StudentServlet?page=allhou">受験報告書提出</a></th>
 	    <th id="menu4" width="25%"><a href="/sotukenAdmin/LoginControl?state=student">ログアウト</a></th>
     </tr>
 	</table>

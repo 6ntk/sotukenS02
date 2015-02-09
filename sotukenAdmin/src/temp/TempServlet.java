@@ -95,7 +95,7 @@ public class TempServlet extends HttpServlet {
 
 					/*学籍番号が入ってなかったら*/
 					if (request.getParameter("gakuseki") == null) {
-						page = "temp/userHenkou/userHenkou.jsp";
+						page = "temp/henkou/userHenkou.jsp";
 						try {
 							tm.userDBSelect();
 						} catch (Exception e) {
@@ -125,7 +125,7 @@ public class TempServlet extends HttpServlet {
 
 					/*企業IDが入ってなかったら*/
 					if (request.getParameter("id") == null) {
-						page = "/temp/kigyoHenkou/kigyoHenkou.jsp";
+						page = "/temp/henkou/kigyoHenkou.jsp";
 						try {
 							tm.kigyoDBSelect();
 						} catch (Exception e) {
@@ -156,7 +156,7 @@ public class TempServlet extends HttpServlet {
 
 					if(request.getParameter("id") == null){
 
-						page = "/temp/kigyoHenkou/kigyoHenkou.jsp";
+						page = "/temp/henkou/kigyoHenkou.jsp";
 						try {
 							tm.kigyoDBSelect();
 						} catch (Exception e) {
@@ -204,8 +204,12 @@ public class TempServlet extends HttpServlet {
 
 				try {
 					tm.jukenSelect(Integer.parseInt(request.getParameter("juId")));
+
 					km.jukenHoukokuInsert(tm.getJhi());
+					String resultMsg = tm.getResultMsg();
+
 					tm.jukenDelete(Integer.parseInt(request.getParameter("juId")));
+					tm.setResultMsg(resultMsg);
 				} catch (Exception e) {
 					// TODO 自動生成された catch ブロック
 					e.printStackTrace();
@@ -266,13 +270,13 @@ public class TempServlet extends HttpServlet {
 				session = request.getSession(false);
 
 				jhi = (JukenHoukokuInfo) session.getAttribute("JukenHoukokuInfo");
-				tojhi.toJhi(request, response,jhi);
-
-				session.setAttribute("JukenHoukokuInfo", jhi);
 
 				try {
 					tm.jukenHoukokuInsert(jhi);
+					String resultMsg = tm.getResultMsg();
 					tm.jukenDelete(jhi.getId());
+					tm.setResultMsg(resultMsg);
+
 				} catch (Exception e) {
 					// TODO 自動生成された catch ブロック
 					e.printStackTrace();

@@ -53,7 +53,7 @@ public class StudentServlet extends HttpServlet {
 		 *
 		 *ーーーーーーーーーー 検索ーーーーーーーーーーー
 		 */
-		String page = "/Student/kensaku/kensaku.jsp";
+		String page = "/StudentServlet?page=all";
 
 		String pageF = request.getParameter("page");
 
@@ -84,7 +84,7 @@ public class StudentServlet extends HttpServlet {
 
 				break;
 
-				case "zen":
+				case "all":
 					if(request.getParameter("id") == null){
 						page = "/Student/kensaku/kensaku.jsp";
 						try {
@@ -109,7 +109,7 @@ public class StudentServlet extends HttpServlet {
 					break;
 
 
-				case "zenhou":
+				case "allhou":
 					if(request.getParameter("id") == null){
 						page = "/Student/houkoku/houkoku.jsp";
 						try {
@@ -190,6 +190,7 @@ public class StudentServlet extends HttpServlet {
 				e.printStackTrace();
 			}
 
+			request.setAttribute("tm",tm);
 		}
 
 		//報告書提出確認

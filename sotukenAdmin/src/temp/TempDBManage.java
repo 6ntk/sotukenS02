@@ -13,6 +13,7 @@ public class TempDBManage extends SuperClass{
 	private String selectKigyoAllSql ="select * from kigyo";
 	private String jukenMaeSql = "select * from kigyo where kigyoName like ?";
 	private String jukenZenbuSql = "select * from kigyo where kigyoName=?";
+	private String insertSql = "insert into temp(gakuseki,id,nanji,dateFrom,dateTo,testSyu,tutiDate,toGa,ippanKamoku,ippanTime,senmonKamoku,senmonTime,sonota,sonoTime,sikenComment,theme,bunTime,bunRyo,kanseido,kensaSyu,kensaTime,kensaComment,menNin1,menNin2,menKatati,menTime,sitsuComment,hanseiComment,kenComment,jogen) value (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
 	private ArrayList<JukenInfo> ji;
 
@@ -24,8 +25,15 @@ public class TempDBManage extends SuperClass{
 		setSelectKigyoAllSql(selectKigyoAllSql);
 		setJukenMaeSql(jukenMaeSql);
 		setJukenZenbuSql(jukenZenbuSql);
+		setInsertSql(insertSql);
 
 	}
+
+
+	public ArrayList<JukenInfo> getJi() {
+		return ji;
+	}
+
 
 	//全ての受験報告表示
 	public void jukenAllSelect() throws Exception{

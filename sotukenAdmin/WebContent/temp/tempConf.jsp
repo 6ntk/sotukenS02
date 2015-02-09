@@ -43,7 +43,7 @@
 	</tr>
 	<tr>
 		<th>名前</th>
-		<td>${tm.ui.sex}</td>
+		<td>${tm.ui.name}</td>
 	</tr>
 
 	<!-- 企業情報 -->
@@ -55,7 +55,7 @@
 		<th>住所</th><td>${tm.ki.address}</td>
 	</tr>
 	<tr>
-		<th>何次試験</th><td>${tm.jhi.nanji}</td>
+		<th>何次試験</th><td>${tm.jhi.nanji}次試験</td>
 	</tr>
 	<tr>
 		<th>試験開始<br />日時</th><td>${tm.jhi.dateFrom}</td>
