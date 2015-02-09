@@ -36,7 +36,7 @@
 
 </div>
 <div class="gradient"></div>
-
+${km.resultMsg }
 ${errMsg }
 </body>
 </html>

@@ -4,8 +4,6 @@ import kyotu.SuperClass;
 
 public class KigyoDBManage extends SuperClass{
 
-	private String resultMsg;
-
 	/*企業編集更新*/
 	private String kigyoUpdateSql = "update kigyo set kigyoName=?,kigyoFuri=?,address=? where id=?";
 	/*企業登録*/

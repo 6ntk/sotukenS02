@@ -54,6 +54,7 @@
 
 	</c:forEach>
 	</table>
+	${km.resultMsg }
 
 	<div id="wrapper">
 	<input type="button" value="戻 る" class="button" onclick="history.back()" />

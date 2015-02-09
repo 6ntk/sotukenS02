@@ -47,6 +47,7 @@
 
 </c:forEach>
 </table>
+${tm.resultMsg }
 
 <hr />
 

@@ -58,6 +58,7 @@
 	</c:forEach>
 	</table>
 
+	${km.resultMsg }
 	<hr />
 
 	<div id="wrapper">

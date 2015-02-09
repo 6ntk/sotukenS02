@@ -20,7 +20,7 @@
 </head>
 <body>
 
-<%@include file="../../menu/student_menu.jsp" %>
+<%@include file="../../menu/admin_menu.jsp" %>
 
 <h1>受験報告書 確認</h1>
 
@@ -45,7 +45,7 @@
 	</tr>
 	<tr>
 		<th>名前</th>
-		<td>${km.ui.sex}</td>
+		<td>${km.ui.name}</td>
 	</tr>
 
 	<!-- 企業情報 -->
@@ -57,7 +57,7 @@
 		<th>住所</th><td>${km.ki.address}</td>
 	</tr>
 	<tr>
-		<th>何次試験</th><td>${JukenHoukokuInfo.nanji}</td>
+		<th>何次試験</th><td>${JukenHoukokuInfo.nanji}次試験</td>
 	</tr>
 	<tr>
 		<th>試験開始<br />日時</th><td>${JukenHoukokuInfo.dateFrom}</td>

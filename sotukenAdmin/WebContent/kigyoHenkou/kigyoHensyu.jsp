@@ -44,6 +44,7 @@
 		</tr>
 
 	</table>
+	${km.resultMsg }
 
 	<hr />
 

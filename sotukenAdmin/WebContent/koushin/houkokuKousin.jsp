@@ -83,7 +83,7 @@ $(function(){
 		</tr>
 		<tr>
 			<th>名前</th>
-			<td>${km.ui.sex}</td>
+			<td>${km.ui.name}</td>
 		</tr>
 		<tr>
 			<th>卒業年度</th>
@@ -116,7 +116,7 @@ $(function(){
 			<td><input type="radio" name="nanji" value="1" onclick="changeDisabled()" />一次試験　
 			<input type="radio" name="nanji" value="2"  onclick="changeDisabled()"/>二次試験　
 			<input type="radio" name="nanji" value="3"  onclick="changeDisabled()"/>三次試験　
-			<input type="radio" name="nanji" value="4"  onclick="changeDisabled()"/>その他　<input type="text" name="nanjiEtc" />
+			<input type="radio" name="nanji" value="4"  onclick="changeDisabled()"/>その他　<input type="text" name="nanjiEtc" disabled="disabled"/>
 
 			<!-- エラー表示場所 -->
 			<div id="nanji_error"></div>
@@ -125,10 +125,10 @@ $(function(){
 		<tr>
 			<th>実施日<br/>必須項目</th>
 			<td><p>
-			開始：　<input type="text" value="${jhi.dateFrom }" name="dateFrom" id="date_from"/>
+			開始：　<input type="text" value="${JukenHoukokuInfo.dateFrom }" name="dateFrom" id="date_from"/>
 			</p>
 			<p>
-			終了：　<input type="text" value="${jhi.dateTo }" name="dateTo" id="date_to"/>
+			終了：　<input type="text" value="${JukenHoukokuInfo.dateTo }" name="dateTo" id="date_to"/>
 			</p>
 
 			<!-- エラー表示場所 -->
@@ -171,7 +171,7 @@ $(function(){
 
 		<tr>
 			<th>日時</th>
-			<td><input type="text" value="${jhi.tutiDate }" name="tutiDate" id="date_kekka"/>頃
+			<td><input type="text" value="${JukenHoukokuInfo.tutiDate }" name="tutiDate" id="date_kekka"/>頃
 			</td>
 		</tr>
 

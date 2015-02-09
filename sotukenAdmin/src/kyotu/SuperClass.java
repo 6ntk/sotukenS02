@@ -41,8 +41,8 @@ public class SuperClass extends DBAccess {
 	/*削除*/
 	private String jukenDeleteSql = "delete from juken where juId=?";
 
-	private LoadProperty lp;
-	private String resultMsg;
+	protected LoadProperty lp;
+	protected String resultMsg;
 
 	public SuperClass(){
 

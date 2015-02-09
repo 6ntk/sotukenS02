@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 import juken.JukenInfo;
 import kyotu.SuperClass;
-import tools.LoadProperty;
 
 public class TempDBManage extends SuperClass{
 
@@ -16,8 +15,6 @@ public class TempDBManage extends SuperClass{
 	private String jukenZenbuSql = "select * from kigyo where kigyoName=?";
 
 	private ArrayList<JukenInfo> ji;
-	private String resultMsg;
-	private LoadProperty lp;
 
 	public TempDBManage() {
 		super();
@@ -28,10 +25,6 @@ public class TempDBManage extends SuperClass{
 		setJukenMaeSql(jukenMaeSql);
 		setJukenZenbuSql(jukenZenbuSql);
 
-	}
-
-	public String getResultMsg() {
-		return resultMsg;
 	}
 
 	//全ての受験報告表示
@@ -64,8 +57,8 @@ public class TempDBManage extends SuperClass{
 			//DB切断
 			disConnect();
 
-			if( this.ji == null ){
-				this.resultMsg = lp.getProperty("super.jukenAllSelect");
+			if( this.ji.size() == 0 ){
+				this.resultMsg = lp.getProperty("temp.jukenAllSelect");
 
 			}
 		}
