@@ -51,10 +51,6 @@ $(function(){
 <link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/form.css"/>
 <link rel="stylesheet" href="/sotukenAdmin/css/jquery.datetimepicker.css" />
 
-
-</script>
-
-
 </head>
 <body>
 
