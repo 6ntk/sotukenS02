@@ -26,8 +26,7 @@
 <script type="text/javascript" src="/sotukenAdmin/js/jquery.validate.min.js"></script>
 <script type="text/javascript" src="/sotukenAdmin/js/toolValidate.js"></script>
 
-<!-- tool -->
-<script type="text/javascript" src="/sotukenAdmin/js/tool.js"></script>
+<link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/jquery.datetimepicker.css" />
 
 <script type="text/javascript">
 
@@ -49,15 +48,6 @@ $(function(){
 
 <title>一時表</title>
 </head>
-<body>
-
-<form action="/sotukenAdmin/TempServlet" method="post" id="myform" name="myform">
-
-	<!-- 出席番号、性別、名前 -->
-	<table id="studentInfo
-class="table1">
-
-	</head>
 <body>
 
 <form action="/sotukenAdmin/TempServlet" method="post" id="myform" name="myform">
