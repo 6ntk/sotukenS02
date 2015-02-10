@@ -72,8 +72,9 @@ a {
 	font-weight:bold;
 	font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
 	overflow:visible;
-	width: 100px;
-    height:40px;
+	/* width: 100px;
+    height:40px; */
+    padding:10px;
 
 	color: #4A3C8C;
 	background: #fff;
