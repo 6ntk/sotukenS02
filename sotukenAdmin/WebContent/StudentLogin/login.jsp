@@ -17,7 +17,7 @@
 
 <div id="wrapper">
 
-<form name="login-form" class="form-container" action="/sotukenAdmin/LoginControl" method="post">
+<form name="login-form" class="form-container" action="/sotukenAdmin/LoginControl?page=student" method="post">
 
 	<div class="form-title"><h2>ログイン</h2></div>
 	<div class="form-title">ユーザーID</div>
