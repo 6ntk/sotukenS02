@@ -11,8 +11,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
+<!-- dataTables -->
+<script type="text/javascript" src="/sotukenAdmin/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/sotukenAdmin/js/jquery.dataTables.min.js"></script>
+<!-- <script type="text/javascript" src="/sotukenAdmin/js/tool.js"></script> -->
+
+<script type="text/javascript" src="/sotukenAdmin/js/datatables.js"></script>
+
 <!-- css -->
 <link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/site.css"/>
+<link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/jquery.dataTables.css"/>
 
 <title>ユーザー一覧</title>
 </head>
@@ -22,11 +30,13 @@
 <h1>ユーザー一覧</h1>
 
 <table id="table1" class="table01">
-
+	<thead>
 	<tr id="tr1">
 		<th style="width:50%" align="left">学籍番号</th>
 		<th style="width:50%" align="left">名前</th>
 	</tr>
+	</thead>
+	<tbody>
 	<c:forEach items="${km.uList}" var="item">
 
 		<tr id="tr2">
@@ -35,6 +45,7 @@
 	</tr>
 
 	</c:forEach>
+	</tbody>
 </table>
 
 <div id="wrapper">

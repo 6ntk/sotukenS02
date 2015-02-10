@@ -13,26 +13,23 @@
 </head>
 <body>
 
+<h1>受験報告書 閲覧・提出</h1>
+
 <div id="wrapper">
 
-	<form name="login-form" class="login-form" action="/sotukenAdmin/LoginControl?page=student" method="post">
+<form name="login-form" class="form-container" action="/sotukenAdmin/LoginControl" method="post">
 
-		<div class="header">
-		<h1>ログイン</h1>
-		</div>
+	<div class="form-title"><h2>ログイン</h2></div>
+	<div class="form-title">ユーザーID</div>
+		<input class="input" type="text" name="user" />
+		<label><font color="red">（学籍番号7桁）</font></label><br />
+	<div class="form-title">パスワード</div>
+		<input class="input" type="text" name="passwd" /><br />
+	<div class="submit-container">
+		<input type="submit" name="submit" value="ログインして、受験報告書Siteへ行く" class="button" />
+	</div>
 
-		<div class="content">
-		<span>学籍番号</span>
-		<input name="user" type="text" class="input username" />
-		<span>パスワード</span>
-		<input name="passwd" type="password" class="input password" />
-		</div>
-
-		<div class="footer">
-		<input type="submit" name="submit" value="Login" class="button" />
-		</div>
-
-	</form>
+</form>
 
 </div>
 <div class="gradient"></div>

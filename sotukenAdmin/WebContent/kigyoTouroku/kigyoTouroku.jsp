@@ -14,6 +14,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
+<!-- 郵便番号検索 -->
+<script src="http://ajaxzip3.googlecode.com/svn/trunk/ajaxzip3/ajaxzip3.js" charset="UTF-8"></script>
+
 <!-- <script type="text/javascript" src="/sotukenAdmin/js/jquery-2.1.1.min.js"></script> -->
 <script type="text/javascript" src="/sotukenAdmin/js/jquery-1.11.0.min.js"></script>
 
@@ -41,7 +44,7 @@
 	<table id="kigyoInfo" class="table2">
 
 		<tr >
-			<td rowspan="3" class="td1"><b>企業情報</b></td>
+			<td rowspan="4" class="td1"><b>企業情報</b></td>
 
 			<th>企業名</th>
 			<td><input type="text" name="kigyoName" value="${km.ki.kigyoName }" class="kigyoInput"/></td>
@@ -50,6 +53,10 @@
 		<tr>
 			<th>企業名<br />(ふりがな)</th>
 			<td><input type="text" name="kigyoFuri"value="${km.ki.kigyoFuri }" class="kigyoInput"/></td>
+		</tr>
+		<tr>
+			<th>郵便番号<br />(任意)</th>
+			<td><input type="text" name="zip" class="kigyoInput" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','address','address');"/></td>
 		</tr>
 		<tr>
 			<th>住所</th>

@@ -8,8 +8,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
+<!-- dataTables -->
+<script type="text/javascript" src="/sotukenAdmin/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/sotukenAdmin/js/jquery.dataTables.min.js"></script>
+<!-- <script type="text/javascript" src="/sotukenAdmin/js/tool.js"></script> -->
+
+<script type="text/javascript" src="/sotukenAdmin/js/datatables.js"></script>
+
 <!-- css -->
 <link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/site.css"/>
+<link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/jquery.dataTables.css"/>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>ユーザー一覧</title>
@@ -20,20 +28,20 @@
 
 <h1>ユーザー一覧</h1>
 <table id="table1" class="table01">
-
+	<thead>
 	<tr id="tr1">
 		<th style="width:50%" align="left">学籍番号</th>
 		<th style="width:50%" align="left">名前</th>
 	</tr>
-
-<c:forEach items="${km.uList}" var="item">
-
-	<tr id="tr2">
+	</thead>
+	<tbody>
+	<c:forEach items="${km.uList}" var="item">
+		<tr id="tr2">
 		<td style="width:40%"><a href="/sotukenAdmin/HoukokuServlet?page=gakuseki&gakuseki=${item.gakuseki }">${item.gakuseki }</a></td>
 		<td style="width:60%"><a href="/sotukenAdmin/HoukokuServlet?page=gakuseki&gakuseki=${item.gakuseki }">${item.name }</a></td>
-	</tr>
-</c:forEach>
-
+		</tr>
+	</c:forEach>
+	</tbody>
 </table>
 
 <hr />

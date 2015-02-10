@@ -15,30 +15,26 @@
 
 <h1>受験報告書 閲覧・提出</h1>
 
-
 <div id="wrapper">
 
-	<form name="login-form" class="login-form" action="/sotukenAdmin/LoginControl" method="post">
+<form name="login-form" class="form-container" action="/sotukenAdmin/LoginControl" method="post">
 
-	<table width="100%">
-	<tr>
-		<th width="30%">管理者ID</th><td><input name="user" type="text" class="input" /></td>
-	</tr>
+	<div class="form-title"><h2>管理者ログイン</h2></div>
+	<div class="form-title">ユーザーID</div>
+		<input class="input" type="text" name="user" />
+		<label><font color="red">（学籍番号7桁）</font></label><br />
+	<div class="form-title">パスワード</div>
+		<input class="input" type="password" name="passwd" /><br />
+	<div class="submit-container">
+		<input type="submit" name="submit" value="ログインして、受験報告書Siteへ行く" class="button" />
+		<br/>${errMsg }
+	</div>
 
-	<tr>
-		<th width="30%">パスワード</th><td><input name="passwd" type="password" class="input" /></td>
-	</tr>
-	</table>
-
-	<hr />
-
-	<input type="submit" name="submit" value="ログイン" class="button" />
-
-	</form>
+</form>
 
 </div>
 <div class="gradient"></div>
 ${km.resultMsg }
-${errMsg }
+
 </body>
 </html>
