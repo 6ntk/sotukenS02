@@ -46,7 +46,6 @@ function TextareaDes(from) {
     from.onfocus = function (event) {};// これ以降呼び出されないように、自殺。
     return;
 }
-
 //
 $(function($) {
     $('tbody tr[data-href]').addClass('clickable').delegate('*', 'click', function() {

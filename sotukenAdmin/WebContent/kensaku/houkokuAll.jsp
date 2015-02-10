@@ -12,8 +12,16 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
+<!-- dataTables -->
+<script type="text/javascript" src="/sotukenAdmin/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/sotukenAdmin/js/jquery.dataTables.min.js"></script>
+<!-- <script type="text/javascript" src="/sotukenAdmin/js/tool.js"></script> -->
+
+<script type="text/javascript" src="/sotukenAdmin/js/datatables.js"></script>
+
 <!-- css -->
-<link href="/sotukenAdmin/css/site.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/site.css"/>
+<link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/jquery.dataTables.css"/>
 
 <title>受験報告書</title>
 </head>
@@ -27,7 +35,7 @@
 <h2>${km.ki.kigyoName}</h2>
 
 <table id="table1" class="table01">
-
+	<thead>
 	<tr id="tr1">
 		<th style="width:16%" align="left">受験ID</th>
 		<th style="width:18%" align="left">提出日時</th>
@@ -36,18 +44,19 @@
 		<th style="width:16%" align="left">何次試験</th>
 		<th style="width:16%" align="left">卒業年度</th>
 	</tr>
-
+	</thead>
+	<tbody>
 	<c:forEach items="${km.ji}" var="item">
 	<tr>
-		<td style="width:16%"><a href="/sotukenAdmin/KensakuServlet?page=syosai&juId=${item.juId }">${item.juId }</a></td>
+		<td style="width:16%" ><a href="/sotukenAdmin/KensakuServlet?page=syosai&juId=${item.juId }">${item.juId }</a></td>
 		<td style="width:18%"><a href="/sotukenAdmin/KensakuServlet?page=syosai&juId=${item.juId }">${item.teiDate }</a></td>
-		<td style="width:16%"><a href="/sotukenAdmin/KensakuServlet?page=syosai&juId=${item.juId }">${item.syuNum }</a></td>
+		<td style="width:16%" ><a href="/sotukenAdmin/KensakuServlet?page=syosai&juId=${item.juId }">${item.syuNum }</a></td>
 		<td style="width:18%"><a href="/sotukenAdmin/KensakuServlet?page=syosai&juId=${item.juId }">${item.name }</a></td>
-		<td style="width:16%"><a href="/sotukenAdmin/KensakuServlet?page=syosai&juId=${item.juId }">${item.nanji }</a></td>
-		<td style="width:16%"><a href="/sotukenAdmin/KensakuServlet?page=syosai&juId=${item.juId }">${item.sotuDate }</a></td>
+		<td style="width:16%" ><a href="/sotukenAdmin/KensakuServlet?page=syosai&juId=${item.juId }">${item.nanji }</a></td>
+		<td style="width:16%" ><a href="/sotukenAdmin/KensakuServlet?page=syosai&juId=${item.juId }">${item.sotuDate }</a></td>
 	</tr>
 	</c:forEach>
-
+	</tbody>
 </table>
 ${km.resultMsg }
 <hr />

@@ -26,8 +26,7 @@
 <script type="text/javascript" src="/sotukenAdmin/js/jquery.validate.min.js"></script>
 <script type="text/javascript" src="/sotukenAdmin/js/toolValidate.js"></script>
 
-<!-- tool -->
-<script type="text/javascript" src="/sotukenAdmin/js/tool.js"></script>
+<link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/jquery.datetimepicker.css" />
 
 <script type="text/javascript">
 
@@ -47,10 +46,14 @@ $(function(){
 
 <script type="text/javascript" src="/sotukenAdmin/js/check.js"></script>
 
+<<<<<<< HEAD
 <!-- css -->
 <link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/form.css"/>
 <link rel="stylesheet" href="/sotukenAdmin/css/jquery.datetimepicker.css" />
 
+=======
+<title>一時表</title>
+>>>>>>> refs/heads/オリジナル
 </head>
 <body>
 
