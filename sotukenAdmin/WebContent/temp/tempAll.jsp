@@ -40,22 +40,6 @@
 	<th style="width:14%" align="left">何次試験</th>
 	<th style="width:14%" align="left">卒業年度</th>
 	</tr>
-<<<<<<< HEAD
-
-<c:forEach items="${tm.ji}" var="item">
-
-	<tr id="tr2">
-		<td style="width:10%"><a href="/sotukenAdmin/TempServlet?page=all&juId=${item.juId }">${item.juId }</a></td>
-		<td style="width:14%"><a href="/sotukenAdmin/TempServlet?page=all&juId=${item.juId }">${item.teiDate }</a></td>
-		<td style="width:10%"><a href="/sotukenAdmin/TempServlet?page=all&juId=${item.juId }">${item.syuNum }</a></td>
-		<td style="width:14%"><a href="/sotukenAdmin/TempServlet?page=all&juId=${item.juId }">${item.name }</a></td>
-		<td style="width:18%"><a href="/sotukenAdmin/TempServlet?page=all&juId=${item.juId }">${item.kigyoName }</a></td>
-		<td style="width:14%"><a href="/sotukenAdmin/TempServlet?page=all&juId=${item.juId }">${item.nanji }</a></td>
-		<td style="width:14%"><a href="/sotukenAdmin/TempServlet?page=all&juId=${item.juId }">${item.sotuDate }</a></td>
-	</tr>
-
-</c:forEach>
-=======
 	</thead>
 	<tbody>
 	<c:forEach items="${tm.ji}" var="item">
@@ -70,7 +54,6 @@
 		</tr>
 	</c:forEach>
 	</tbody>
->>>>>>> refs/heads/オリジナル
 </table>
 ${tm.resultMsg }
 
