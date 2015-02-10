@@ -47,11 +47,17 @@ $(function(){
 
 <script type="text/javascript" src="/sotukenAdmin/js/check.js"></script>
 
-<!-- css -->
-<link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/form.css"/>
-<link rel="stylesheet" href="/sotukenAdmin/css/jquery.datetimepicker.css" />
-
+<title>一時表</title>
 </head>
+<body>
+
+<form action="/sotukenAdmin/TempServlet" method="post" id="myform" name="myform">
+
+	<!-- 出席番号、性別、名前 -->
+	<table id="studentInfo
+class="table1">
+
+	</head>
 <body>
 
 <form action="/sotukenAdmin/TempServlet" method="post" id="myform" name="myform">

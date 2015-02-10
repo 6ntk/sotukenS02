@@ -1,24 +1,24 @@
 /**
- * datatables
+ * datatable
  */
 $(document).ready(function(){
   $('#table1').dataTable({
-	  "bFilter": false,
-
 	  "oLanguage": {
 	        "sLengthMenu": "表示行数 _MENU_ 件",
 	        "oPaginate": {
-	            "sNext": "次のページ",
-	            "sPrevious": "前のページ"
+		        "sNext": "次のページ",
+		        "sPrevious": "前のページ",
+		        "sFirst":"先頭",
+		        "sLast":"末尾"
 	        },
 	        "sInfo": "全_TOTAL_件中 _START_件から_END_件を表示",
-	        "sSearch": "検索：",
-	        "sEmptyTable":"見つかりませんでした",
-	        "sInfoEmpty":""
-	    }
+	        "sEmptyTable " : "データが登録されていません。",
+	        "sZeroRecords" : "該当するデータが見つかりませんでした。",
 
+	  },
+	  "bFilter":false,
+	  "bProcessing":true,
+	  "dom": 'Rlfrtip',
+	  "pagingType": "full_numbers"
   });
-
 });
-
-

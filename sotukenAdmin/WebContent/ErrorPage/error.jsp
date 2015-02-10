@@ -20,7 +20,7 @@
 <h1>エラー</h1>
 ${em.errMsg }
 
-<form method="post">
+<form  method="post">
 	<input type="button" value="戻る" onclick="history.back()" />
 
 </form>

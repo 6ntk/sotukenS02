@@ -17,6 +17,7 @@
 <!-- css -->
 <link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/form.css"/>
 
+<title>一時表</title>
 </head>
 <body>
 
