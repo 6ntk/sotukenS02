@@ -46,14 +46,7 @@ $(function(){
 
 <script type="text/javascript" src="/sotukenAdmin/js/check.js"></script>
 
-<<<<<<< HEAD
-<!-- css -->
-<link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/form.css"/>
-<link rel="stylesheet" href="/sotukenAdmin/css/jquery.datetimepicker.css" />
-
-=======
 <title>一時表</title>
->>>>>>> refs/heads/オリジナル
 </head>
 <body>
 

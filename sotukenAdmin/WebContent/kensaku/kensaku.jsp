@@ -11,25 +11,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<<<<<<< HEAD
-<link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css"/>
-  <!-- jQuery -->
-  <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
-  <!-- DataTables -->
-  <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
-<script>
-$(document).ready(function(){
-  $('#table1').dataTable();
-});
-</script>
-
-<!-- dataTables -->
-<!-- <link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/jquery.dataTables.css"/>
-<script type="text/javascript" src="/sotukenAdmin/js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="/sotukenAdmin/js/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="/sotukenAdmin/js/tool.js"></script> -->
-
-=======
 <!-- <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css"/>
   jQuery
   <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
@@ -42,7 +23,6 @@ $(document).ready(function(){
 <!-- <script type="text/javascript" src="/sotukenAdmin/js/tool.js"></script> -->
 
 <script type="text/javascript" src="/sotukenAdmin/js/datatables.js"></script>
->>>>>>> refs/heads/オリジナル
 
 <!-- css -->
 <link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/site.css"/>
@@ -81,11 +61,7 @@ $(document).ready(function(){
 		<th style="width:30%" align="left">住所</th>
 	</tr>
 	</thead>
-<<<<<<< HEAD
-<tbody>
-=======
 	<tbody>
->>>>>>> refs/heads/オリジナル
 	<c:forEach items="${km.list}" var="item">
 
 		<tr id="tr2">
