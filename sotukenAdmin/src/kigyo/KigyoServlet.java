@@ -10,12 +10,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import temp.TempDBManage;
+
 /**
  * Servlet implementation class AdminServlet
  */
 @WebServlet("/KigyoServlet")
 public class KigyoServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	private TempDBManage tm;
     private KigyoDBManage km;
     private KigyoInfo ki;
     private HttpSession session;
@@ -28,8 +31,10 @@ public class KigyoServlet extends HttpServlet {
      */
     public KigyoServlet(){
 
+    	tm = new TempDBManage();
         km = new KigyoDBManage();
         ki = new KigyoInfo();
+        tm.setResultMsg("");
     }
 
 	/**

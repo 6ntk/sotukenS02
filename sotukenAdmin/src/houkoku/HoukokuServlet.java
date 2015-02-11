@@ -12,6 +12,7 @@ import javax.servlet.http.HttpSession;
 
 import juken.JukenHoukokuInfo;
 import kigyo.KigyoDBManage;
+import temp.TempDBManage;
 import toJhi.ToJhi;
 import toNull.ToNull;
 import error.ErrorManager;
@@ -29,6 +30,7 @@ public class HoukokuServlet extends HttpServlet {
     private ToNull tn;
     private String page;
     private ErrorManager em;
+    private TempDBManage tm;
 
 	/**
      * @throws IOException
@@ -37,11 +39,13 @@ public class HoukokuServlet extends HttpServlet {
      */
     public HoukokuServlet(){
 
+    	tm = new TempDBManage();
         km = new KigyoDBManage();
         tn = new ToNull();
         jhi = new JukenHoukokuInfo();
         tojhi = new ToJhi();
         em = new ErrorManager();
+        tm.setResultMsg("");
 
     }
 

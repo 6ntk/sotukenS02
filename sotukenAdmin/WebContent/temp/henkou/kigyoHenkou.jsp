@@ -8,8 +8,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
+<!-- dataTables -->
+<script type="text/javascript" src="/sotukenAdmin/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/sotukenAdmin/js/jquery.dataTables.min.js"></script>
+<!-- <script type="text/javascript" src="/sotukenAdmin/js/tool.js"></script> -->
+
+<script type="text/javascript" src="/sotukenAdmin/js/datatables.js"></script>
+
 <!-- css -->
 <link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/site.css"/>
+<link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/jquery.dataTables.css"/>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>企業変更</title>
@@ -36,13 +44,16 @@
 	<input type="submit" value="検 索" class="button"/>
 
 	<table id="table1" class="table01">
+	<thead>
 	<tr id="tr1">
 		<th style="width:10%" align="left">企業ID</th>
 		<th style="width:30%" align="left">企業名</th>
 		<th style="width:30%" align="left">企業名(ふりがな)</th>
 		<th style="width:30%" align="left">住所</th>
 	</tr>
+	</thead>
 
+	<tbody>
 	<c:forEach items="${tm.list}" var="item">
 
 		<tr id="tr2">
@@ -53,6 +64,7 @@
 		</tr>
 
 	</c:forEach>
+	</tbody>
 	</table>
 	${tm.resultMsg }
 

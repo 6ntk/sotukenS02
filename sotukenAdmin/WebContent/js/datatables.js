@@ -15,7 +15,8 @@ $(document).ready(function(){
 	        "sInfoEmpty":"全0件中 0件を表示",
 	        "sEmptyTable " : "データが登録されていません。",
 	        "sZeroRecords" : "該当するデータが見つかりませんでした。",
-
+	        "sLoadingRecords":"読み込み中...",
+	        "sProcessing":"読み込み中..."
 	  },
 	  "bFilter":false,
 	  "bProcessing":true,

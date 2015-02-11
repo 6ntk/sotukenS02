@@ -39,6 +39,7 @@ public class TempServlet extends HttpServlet {
         jhi = new JukenHoukokuInfo();
         tojhi = new ToJhi();
         tn = new ToNull();
+        tm.setResultMsg("");
     }
 
 	/**
@@ -56,17 +57,25 @@ public class TempServlet extends HttpServlet {
 
 				case "all":
 
-					if(request.getParameter("juId") == null){
-						page = "/temp/tempAll.jsp";
-
+					if(request.getParameter("juId") == null && request.getParameter("gakuseki") == null){
+						page = "/temp/tempUser.jsp";
 						try {
-							tm.jukenAllSelect();
+							tm.userDBSelect();
 						} catch (Exception e) {
 							// TODO 自動生成された catch ブロック
 							e.printStackTrace();
 						}
 
-					}else{
+					}else if(request.getParameter("gakuseki") != null){
+						page = "temp/tempAll.jsp";
+						try {
+							tm.jukenKigyoSelect(Integer.parseInt(request.getParameter("gakuseki")));
+							tm.userDBSelect(request.getParameter("gakuseki"));
+						} catch (Exception e) {
+							// TODO 自動生成された catch ブロック
+							e.printStackTrace();
+						}
+					}else if(request.getParameter("juId") != null){
 						page = "/temp/tempConf.jsp";
 						try {
 							tm.jukenSelect(Integer.parseInt(request.getParameter("juId")));
@@ -250,13 +259,23 @@ public class TempServlet extends HttpServlet {
 				session = request.getSession(false);
 
 				jhi = (JukenHoukokuInfo) session.getAttribute("JukenHoukokuInfo");
-				tojhi.toJhi(request, response,jhi);
 
-				tn.toNull(jhi);
+				if(jhi.getId() == 0){
+					page = "/temp/tempUpdate.jsp";
+					tm.setResultMsg("企業を選択してください");
+				}else{
+					page = "/temp/tempUpdateConf.jsp";
 
-				session.setAttribute("JukenHoukokuInfo", jhi);
+					tojhi.toJhi(request, response,jhi);
 
-				page = "/temp/tempUpdateConf.jsp";
+					tn.toNull(jhi);
+
+					session.setAttribute("JukenHoukokuInfo", jhi);
+
+				}
+
+
+
 
 				//Attributeに値をセット
 				request.setAttribute("tn",tn);

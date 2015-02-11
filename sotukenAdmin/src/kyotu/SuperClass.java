@@ -13,8 +13,8 @@ import db.DBAccess;
 public class SuperClass extends DBAccess {
 
 	private ArrayList<KigyoInfo> kList;
-	private ArrayList<JukenInfo> ji;
-	private ArrayList<UserInfo> uList;
+	protected ArrayList<JukenInfo> ji;
+	protected ArrayList<UserInfo> uList;
 	private KigyoInfo ki;
 	private UserInfo ui;
 	private JukenInfo jik;
@@ -56,6 +56,10 @@ public class SuperClass extends DBAccess {
 	}
 
 
+
+	public void setSelectUserAllSql(String selectUserAllSql) {
+		this.selectUserAllSql = selectUserAllSql;
+	}
 
 	public void setInsertSql(String insertSql) {
 		this.insertSql = insertSql;
@@ -287,6 +291,8 @@ public class SuperClass extends DBAccess {
 
 	//ユーザー情報全部
 	public void userDBSelect() throws Exception{
+
+		resultMsg="";
 		ArrayList<UserInfo> uList
 		= new ArrayList<UserInfo>();
 
@@ -299,7 +305,7 @@ public class SuperClass extends DBAccess {
 
 		while( getRsResult().next()){
 
-			resultMsg="";
+
 			UserInfo ui =new UserInfo();
 			ui.setGakuseki(getRsResult().getString("gakuseki"));
 			ui.setName(getRsResult().getString("name"));

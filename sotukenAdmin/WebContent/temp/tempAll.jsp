@@ -11,7 +11,6 @@
 <!-- dataTables -->
 <script type="text/javascript" src="/sotukenAdmin/js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="/sotukenAdmin/js/jquery.dataTables.min.js"></script>
-<!-- <script type="text/javascript" src="/sotukenAdmin/js/tool.js"></script> -->
 
 <script type="text/javascript" src="/sotukenAdmin/js/datatables.js"></script>
 
@@ -27,7 +26,7 @@
 <%@include file="../menu/admin_menu.jsp" %>
 
 <h1>一時表一覧</h1>
-
+<h2>${tm.ui.syuNum },${tm.ui.name }</h2>
 <!-- table -->
 <table id="table1" class="table01">
 	<thead>
@@ -35,7 +34,6 @@
 	<th style="width:10%" align="left">受験ID</th>
 	<th style="width:14%" align="left">提出日時</th>
 	<th style="width:10%" align="left">出席番号</th>
-	<th style="width:14%" align="left">氏名</th>
 	<th style="width:18%" align="left">企業名</th>
 	<th style="width:14%" align="left">何次試験</th>
 	<th style="width:14%" align="left">卒業年度</th>
@@ -47,7 +45,6 @@
 		<td style="width:10%"><a href="/sotukenAdmin/TempServlet?page=all&juId=${item.juId }">${item.juId }</a></td>
 		<td style="width:14%"><a href="/sotukenAdmin/TempServlet?page=all&juId=${item.juId }">${item.teiDate }</a></td>
 		<td style="width:10%"><a href="/sotukenAdmin/TempServlet?page=all&juId=${item.juId }">${item.syuNum }</a></td>
-		<td style="width:14%"><a href="/sotukenAdmin/TempServlet?page=all&juId=${item.juId }">${item.name }</a></td>
 		<td style="width:18%"><a href="/sotukenAdmin/TempServlet?page=all&juId=${item.juId }">${item.kigyoName }</a></td>
 		<td style="width:14%"><a href="/sotukenAdmin/TempServlet?page=all&juId=${item.juId }">${item.nanji }</a></td>
 		<td style="width:14%"><a href="/sotukenAdmin/TempServlet?page=all&juId=${item.juId }">${item.sotuDate }</a></td>

@@ -11,6 +11,7 @@
 <%
 	KigyoDBManage km = (KigyoDBManage)request.getAttribute("km");
 	JukenHoukokuInfo jhi = km.getJhi();
+	/* 	JukenHoukokuInfo jhi = (JukenHoukokuInfo)session.getAttribute("JukenHoukokuInfo"); */
 %>
 
 <fmt:setBundle basename="res.msg" var="msg" />
@@ -20,15 +21,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <script type="text/javascript" src="/sotukenAdmin/js/jquery-1.11.0.min.js"></script>
-<!-- datetimepicker -->
-<script src="/sotukenAdmin/js/jquery.datetimepicker.js"></script>
-
-<!-- validate -->
-<script type="text/javascript" src="/sotukenAdmin/js/jquery.validate.min.js"></script>
-<script type="text/javascript" src="/sotukenAdmin/js/toolValidate.js"></script>
-
-<!-- tool -->
-<script type="text/javascript" src="/sotukenAdmin/js/tool.js"></script>
 
 <script type="text/javascript">
 
@@ -47,6 +39,18 @@ $(function(){
 </script>
 
 <script type="text/javascript" src="/sotukenAdmin/js/check.js"></script>
+
+<!-- datetimepicker -->
+<script src="/sotukenAdmin/js/jquery.datetimepicker.js"></script>
+
+<!-- validate -->
+<script type="text/javascript" src="/sotukenAdmin/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/sotukenAdmin/js/toolValidate.js"></script>
+
+<!-- tool -->
+<script type="text/javascript" src="/sotukenAdmin/js/tool.js"></script>
+
+
 
 <!-- css -->
 <link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/form.css"/>
@@ -131,8 +135,6 @@ $(function(){
 			終了：　<input type="text" value="${JukenHoukokuInfo.dateTo }" name="dateTo" id="date_to"/>
 			</p>
 
-			<!-- エラー表示場所 -->
-			<div id="testSyu_error"></div>
 			</td>
 		</tr>
 		<tr>

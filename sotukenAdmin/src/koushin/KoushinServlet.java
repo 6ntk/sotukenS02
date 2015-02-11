@@ -12,6 +12,7 @@ import javax.servlet.http.HttpSession;
 
 import juken.JukenHoukokuInfo;
 import kigyo.KigyoDBManage;
+import temp.TempDBManage;
 import toJhi.ToJhi;
 import toNull.ToNull;
 import error.ErrorManager;
@@ -22,6 +23,7 @@ import error.ErrorManager;
 @WebServlet("/KoushinServlet")
 public class KoushinServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	private TempDBManage tm;
     private KigyoDBManage km;
     private JukenHoukokuInfo jhi;
     private HttpSession session;
@@ -37,11 +39,14 @@ public class KoushinServlet extends HttpServlet {
      */
     public KoushinServlet(){
 
+    	tm = new TempDBManage();
         km = new KigyoDBManage();
         jhi = new JukenHoukokuInfo();
         tojhi = new ToJhi();
         tn = new ToNull();
         em = new ErrorManager();
+
+        tm.setResultMsg("");
     }
 
 	/**
@@ -149,8 +154,7 @@ public class KoushinServlet extends HttpServlet {
 		//Attributeに値をセット
 		request.setAttribute("km",km);
 
-		RequestDispatcher disp =
-				request.getRequestDispatcher(page);
+		RequestDispatcher disp =request.getRequestDispatcher(page);
 		disp.forward(request, response);
 
 	}

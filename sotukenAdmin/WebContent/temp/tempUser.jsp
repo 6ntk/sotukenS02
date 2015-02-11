@@ -41,8 +41,8 @@
 	<c:forEach items="${tm.uList}" var="item">
 
 		<tr id="tr2">
-		<td style="width:50%"><a href="/sotukenAdmin/TempServlet?page=userHenkou&gakuseki=${item.gakuseki }">${item.gakuseki }</a></td>
-		<td style="width:50%"><a href="/sotukenAdmin/TempServlet?page=userHenkou&gakuseki=${item.gakuseki }">${item.name }</a></td>
+		<td style="width:50%"><a href="/sotukenAdmin/TempServlet?page=all&gakuseki=${item.gakuseki }">${item.gakuseki }</a></td>
+		<td style="width:50%"><a href="/sotukenAdmin/TempServlet?page=all&gakuseki=${item.gakuseki }">${item.name }</a></td>
 	</tr>
 
 	</c:forEach>

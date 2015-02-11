@@ -12,6 +12,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/confirm.css"/>
+
 <title>一時表</title>
 </head>
 <body>
@@ -19,6 +23,8 @@
 <%@include file="../menu/admin_menu.jsp" %>
 
 <h1>一次表一覧</h1>
+
+<div id="wrapper">
 
 <form action="/sotukenAdmin/TempServlet" method="post">
 <!-- 1 -->
@@ -38,34 +44,34 @@
 	</tr>
 	<tr>
 		<th>名前</th>
-		<td>${tm.ui.sex}</td>
+		<td>${tm.ui.name}</td>
 	</tr>
 
 	<!-- 企業情報 -->
 	<tr >
 		<td rowspan="8" width="10"><b>企業情報</b></td>
-		<th>企業名</th><td>${km.ki.kigyoName}</td>
+		<th>企業名</th><td>${tm.ki.kigyoName}</td>
 	</tr>
 	<tr>
 		<th>住所</th><td>${tm.ki.address}</td>
 	</tr>
 	<tr>
-		<th>何次試験</th><td>{tm.jhi.nanji}</td>
+		<th>何次試験</th><td>${JukenHoukokuInfo.nanji}次試験</td>
 	</tr>
 	<tr>
-		<th>試験開始<br />日時</th><td>${tm.jhi.dateFrom}</td>
+		<th>試験開始<br />日時</th><td>${JukenHoukokuInfo.dateFrom}</td>
 	</tr>
 	<tr>
-		<th>試験終了<br />日時</th><td>${tm.jhi.dateTo}</td>
+		<th>試験終了<br />日時</th><td>${JukenHoukokuInfo.dateTo}</td>
 	</tr>
 	<tr>
-		<th>試験種類</th><td>${tm.jhi.testSyu}</td>
+		<th>試験種類</th><td>${JukenHoukokuInfo.testSyu}</td>
 	</tr>
 	<tr>
 		<th>結果通知<br />日時</th><td>${tn.jhitn.tutiDate}</td>
 	</tr>
 	<tr>
-		<th>宛</th><td>${tm.jhi.toGa}</td>
+		<th>宛</th><td>${JukenHoukokuInfo.toGa}</td>
 	</tr>
 
 </table>
@@ -82,31 +88,31 @@
 	<!-- 筆記試験 -->
 	<tr >
 		<td rowspan="7" width="10"><b>筆記試験</b></td>
-		<th>一般常識<br />科目</th><td>${tm.jhi.ippanKamoku}</td>
+		<th>一般常識<br />科目</th><td>${JukenHoukokuInfo.ippanKamoku}</td>
 	</tr>
 	<tr>
 		<th>一般常識<br />時間</th><td>${tn.jhitn.ippanTime}</td>
 	</tr>
 	<tr>
-		<th>専門科目<br />科目</th><td>${tm.jhi.senmonKamoku}</td>
+		<th>専門科目<br />科目</th><td>${JukenHoukokuInfo.senmonKamoku}</td>
 	</tr>
 	<tr>
 		<th>専門科目<br />時間</th><td>${tn.jhitn.senmonTime}</td>
 	</tr>
 	<tr>
-		<th>その他</th><td>${tm.jhi.sonota}</td>
+		<th>その他</th><td>${JukenHoukokuInfo.sonota}</td>
 	</tr>
 	<tr>
 		<th>その他<br />時間</th><td>${tn.jhitn.sonoTime}</td>
 	</tr>
 	<tr>
-		<th>試験内容</th><td>${tm.jhi.sikenComment}</td>
+		<th>試験内容</th><td>${JukenHoukokuInfo.sikenComment}</td>
 	</tr>
 
 	<!-- 作文 -->
 	<tr >
 		<td rowspan="4" width="10"><b>作文</b></td>
-		<th>テーマ名</th><td>${tm.jhi.theme}</td>
+		<th>テーマ名</th><td>${JukenHoukokuInfo.theme}</td>
 	</tr>
 	<tr>
 		<th>時間</th><td>${tn.jhitn.bunTime}</td>
@@ -121,13 +127,13 @@
 	<!-- 適性検査 -->
 	<tr >
 		<td rowspan="3" width="10"><b>適性検査</b></td>
-		<th>検査の<br />種類</th><td>${tm.jhi.kensaSyu}</td>
+		<th>検査の<br />種類</th><td>${JukenHoukokuInfo.kensaSyu}</td>
 	</tr>
 	<tr>
 		<th>検査時間</th><td>${tn.jhitn.kensaTime}</td>
 	</tr>
 	<tr>
-		<th>検査内容</th><td>${tm.jhi.kensaComment}</td>
+		<th>検査内容</th><td>${JukenHoukokuInfo.kensaComment}</td>
 	</tr>
 
 	<!-- 面接試験 -->
@@ -139,36 +145,37 @@
 		<th>面接人数<br />受験者側</th><td>${tn.jhitn.menNin2}</td>
 	</tr>
 	<tr>
-		<th>面接形態</th><td>${tm.jhi.menKatati}</td>
+		<th>面接形態</th><td>${JukenHoukokuInfo.menKatati}</td>
 	</tr>
 	<tr>
 		<th>面接時間</th><td>${tn.jhitn.menTime}</td>
 	</tr>
 	<tr>
-		<th>企業側<br />質問内容</th><td>${tm.jhi.sitsuComment}</td>
+		<th>企業側<br />質問内容</th><td>${JukenHoukokuInfo.sitsuComment}</td>
 	</tr>
 	<tr>
-		<th>反省点</th><td>${tm.jhi.hanseiComment}</td>
+		<th>反省点</th><td>${JukenHoukokuInfo.hanseiComment}</td>
 	</tr>
 
 	<!-- 健康診断 -->
 	<tr >
 		<td rowspan="1" width="10"><b>健康診断</b></td>
-		<th>検査内容</th><td>${tm.jhi.kenComment}</td>
+		<th>検査内容</th><td>${JukenHoukokuInfo.kenComment}</td>
 	</tr>
 
 	<!-- 助言 -->
 	<tr >
 		<td rowspan="1" width="10"><b>助言</b></td>
-		<th>受験後の<br />感想と<br />後輩への<br />助言</th><td>${tm.jhi.jogen}</td>
+		<th>受験後の<br />感想と<br />後輩への<br />助言</th><td>${JukenHoukokuInfo.jogen}</td>
 	</tr>
 
 </table>
 
-登録してよろしいですか？
-<input type="submit" value="登 録" name="updateKakuninTouroku" class="button"/>
-<input type="button" value="戻 る" class="button" onclick="history.back()" />
+	<input type="submit" value="登 録" name="updateKettei" class="button"/>
+	<input type="button" value="戻 る" class="button" onclick="history.back()" />
 </form>
+
+</div>
 
 </body>
 </html>

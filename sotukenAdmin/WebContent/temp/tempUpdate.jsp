@@ -18,15 +18,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <script type="text/javascript" src="/sotukenAdmin/js/jquery-1.11.0.min.js"></script>
-<!-- datetimepicker -->
-<script src="/sotukenAdmin/js/jquery.datetimepicker.js"></script>
-
-
-<!-- validate -->
-<script type="text/javascript" src="/sotukenAdmin/js/jquery.validate.min.js"></script>
-<script type="text/javascript" src="/sotukenAdmin/js/toolValidate.js"></script>
-
-<link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/jquery.datetimepicker.css" />
 
 <script type="text/javascript">
 
@@ -46,9 +37,32 @@ $(function(){
 
 <script type="text/javascript" src="/sotukenAdmin/js/check.js"></script>
 
+<!-- datetimepicker -->
+<script src="/sotukenAdmin/js/jquery.datetimepicker.js"></script>
+
+<!-- validate -->
+<script type="text/javascript" src="/sotukenAdmin/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/sotukenAdmin/js/toolValidate.js"></script>
+
+<!-- tool -->
+<script type="text/javascript" src="/sotukenAdmin/js/tool.js"></script>
+
+
+
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/form.css"/>
+<link rel="stylesheet" href="/sotukenAdmin/css/jquery.datetimepicker.css" />
+
+
 <title>一時表</title>
+
 </head>
 <body>
+
+<h1>受験報告書編集</h1>
+${tm.resultMsg }
+
+<div id="wrapper">
 
 <form action="/sotukenAdmin/TempServlet" method="post" id="myform" name="myform">
 
@@ -344,5 +358,7 @@ $(function(){
 	<input type="submit" value="確 認" name="updateKakunin" class="button"/>
 	<input type="button" value="戻 る" class="button" onclick="history.back()"/>
 </form>
+
+</div>
 </body>
 </html>
