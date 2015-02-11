@@ -25,6 +25,8 @@
 
 <h1>一時表一覧</h1>
 
+<div id="wrapper">
+
 <form action="/sotukenAdmin/TempServlet?juId=${tm.jhi.juId }" method="post">
 
 <!-- 1 -->
@@ -171,11 +173,15 @@
 
 </table>
 
+<hr/>
+
 <input type="submit" value="登 録" name="insertBtn" class="button"/>
 <input type="submit" value="変 更" name="updateBtn" class="button"/>
 <input type="submit" value="削 除" name="deleteBtn" class="button"/>
 <input type="button" value="戻 る" class="button" onclick="history.back()" />
 </form>
+
+</div>
 
 </body>
 </html>

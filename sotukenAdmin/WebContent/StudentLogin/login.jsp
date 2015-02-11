@@ -27,13 +27,12 @@
 		<input class="input" type="text" name="passwd" /><br />
 	<div class="submit-container">
 		<input type="submit" name="submit" value="ログインして、受験報告書Siteへ行く" class="button" />
+		<br/>${errMsg }
 	</div>
 
 </form>
 
 </div>
 <div class="gradient"></div>
-
-${errMsg }
 </body>
 </html>

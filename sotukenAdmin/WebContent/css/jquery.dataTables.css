@@ -337,7 +337,7 @@ table.dataTable td {
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
   color: #4A3C8C !important;
-  border: 2px solid #4A3C8C;
+  border: 1px solid #4A3C8C;
   background-color: white;
   /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, gainsboro));
   Chrome,Safari4+
@@ -355,14 +355,14 @@ table.dataTable td {
 .dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
   cursor: default;
   color: #666 !important;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   background: transparent;
   box-shadow: none;
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
   color: white !important;
   background: #4A3C8C;
-	border: 2px solid #4A3C8C;
+	border: 1px solid #4A3C8C;
 	border-radius: 2px;
   /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4A3C8C), color-stop(100%, #4A3C8C));
   Chrome,Safari4+

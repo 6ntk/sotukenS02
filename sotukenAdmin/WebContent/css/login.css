@@ -28,31 +28,58 @@ h1{
 	padding:6px;
 }
 
-h2{
+h2 {
 	color: #3e84b5;
 	text-shadow: 0 2px 1px #ffffff;
-	font-size: 30px;
+	font-size:20px;
+	margin: 0 0 10px 0;
 	text-align:center;
-	padding:6px;
-}
-
-a {
-text-decoration: none;
 }
 
 #wrapper {
-	/* Center wrapper perfectly */
-	text-align: center;
-	/* 	height: 80%; */
-	width: 90%;
-	/* margin: 0 auto; */
-	margin: 70px auto;
-	padding: 0;
+	width:500px;
+	margin:0 auto;
+	padding:30px 20px;
 }
 
 a {
-	text-decoration: none;
+	outline:none;
+	border-style:none;
 }
+
+.form-container {
+   border: 1px solid #4b3c8c;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+   font-family: 'Helvetica Neue',Helvetica,sans-serif;
+   text-decoration: none;
+   vertical-align: middle;
+   padding:20px;
+
+   }
+
+.form-title {
+   margin-bottom:10px;
+}
+
+.submit-container {
+   margin:8px 0;
+   text-align:center;
+}
+
+.form-field {
+/*    border: 1px solid #ffffff;
+   background: #ffffff;
+   border-radius: 2px;
+   color: #000000; */
+   padding:8px;
+   margin-bottom:20px;
+}
+.form-field:focus {
+   background: #fff;
+   color: #000000;
+   }
 
 .input{
 	border:0;
@@ -68,13 +95,11 @@ a {
 }
 
 .button {
+	padding:10px;
 	font-size: 100%;
 	font-weight:bold;
 	font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
 	overflow:visible;
-	/* width: 100px;
-    height:40px; */
-    padding:10px;
 
 	color: #4A3C8C;
 	background: #fff;
@@ -86,4 +111,4 @@ a {
 	color:#fff;
 	border: 1px solid #4A3C8C;
 	border-radius: 2px;
-}
+}}
