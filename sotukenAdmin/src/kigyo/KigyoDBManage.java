@@ -1,5 +1,8 @@
 package kigyo;
 
+import java.util.ArrayList;
+
+import juken.JukenInfo;
 import kyotu.SuperClass;
 
 public class KigyoDBManage extends SuperClass{
@@ -11,9 +14,12 @@ public class KigyoDBManage extends SuperClass{
 	/*企業登録*/
 	private String deleteKigyoSql = "delete from kigyo where id=?";
 
+	private String jukenKigyoAllSql = "select juId,syuNum,sex,name,DATE_FORMAT(teiDate, '%Y/%m/%d %H:%i:%s') teiDate,sotuDate,juken.id,kigyoName,nanji from users join juken on users.gakuseki=juken.gakuseki join kigyo on juken.id=kigyo.id order by teiDate desc limit 30";
+
+
 	public KigyoDBManage() {
 		super();
-		// TODO 自動生成されたコンストラクター・スタブ
+		// TODO 自動生成されたコンストラクター・スタブ;
 	}
 
 	public String getResultMsg() {
@@ -100,5 +106,42 @@ public class KigyoDBManage extends SuperClass{
 			this.resultMsg = strType +"できませんでした";
 		}
 	}
-}
 
+	//受験報告全部
+	public void jukenKigyoAllSelect() throws Exception{
+
+		resultMsg = "";
+		ArrayList<JukenInfo> ji = new ArrayList<JukenInfo>();
+		//接続
+		connect();
+		//ステートメント
+		createStatement(jukenKigyoAllSql);
+
+		//実行
+		selectExe();
+		while( getRsResult().next()){
+			JukenInfo jki =
+					new JukenInfo(
+				getRsResult().getInt("juId"),
+				getRsResult().getString("syuNum"),
+				getRsResult().getString("sex"),
+				getRsResult().getString("name"),
+				getRsResult().getString("teiDate"),
+				getRsResult().getInt("sotuDate"),
+				getRsResult().getInt("juken.id"),
+				getRsResult().getString("kigyoName"),
+				getRsResult().getInt("nanji")
+			);
+			ji.add(jki);
+		}
+
+		this.ji = ji;
+		//DB切断
+		disConnect();
+
+		if( this.ji.size() == 0 ){
+
+			this.resultMsg = lp.getProperty("super.jukenKigyoSelect");
+		}
+	}
+}

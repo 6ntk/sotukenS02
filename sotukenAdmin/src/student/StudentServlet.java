@@ -146,7 +146,21 @@ public class StudentServlet extends HttpServlet {
 					}
 
 					break;
+				case "top":
 
+					page = "/menu/studentTop/houkokuAll.jsp";
+					session = request.getSession(false);
+					ui = (UserInfo) session.getAttribute("loginInfo");
+					try {
+						sm.jukenKigyoAllSelect(Integer.parseInt(ui.getGakuseki()));
+					} catch (NumberFormatException e) {
+						// TODO 自動生成された catch ブロック
+						e.printStackTrace();
+					} catch (Exception e) {
+						// TODO 自動生成された catch ブロック
+						e.printStackTrace();
+					}
+						break;
 				default:
 					break;
 			}
@@ -184,7 +198,7 @@ public class StudentServlet extends HttpServlet {
 		//データベースに登録
 		if( request.getParameter("insertBtn") != null ){
 
-			page = "/menu/StudentTopMenu.jsp";
+			page = "/menu/studentMsg.jsp";
 			jhi = (JukenHoukokuInfo) session.getAttribute("JukenHoukokuInfo");
 
 			try {

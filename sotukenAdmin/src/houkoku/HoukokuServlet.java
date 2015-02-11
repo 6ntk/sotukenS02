@@ -209,7 +209,7 @@ public class HoukokuServlet extends HttpServlet {
 		//報告書登録
 		if( request.getParameter("insertBtn") != null ){
 
-			page = "/menu/Menu.jsp";
+			page = "/menu/msg.jsp";
 
 			session = request.getSession(false);
 			jhi = (JukenHoukokuInfo) session.getAttribute("JukenHoukokuInfo");

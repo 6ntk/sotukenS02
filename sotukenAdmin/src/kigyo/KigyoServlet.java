@@ -149,6 +149,7 @@ public class KigyoServlet extends HttpServlet {
 		/*企業編集確認*/
 		if(request.getParameter("kigyoHensyuKakunin") != null){
 
+			page = "/menu/msg.jsp";
 			session = request.getSession(false);
 			ki = (KigyoInfo) session.getAttribute("KigyoInfo");
 
@@ -163,7 +164,7 @@ public class KigyoServlet extends HttpServlet {
 		//企業登録確認
 		if( request.getParameter("insertKigyoKakunin") != null ){
 
-			page = "/menu/Menu.jsp";
+			page = "/kigyoTouroku/kigyoTourokuKakunin.jsp";
 
 			/*sessionからとってくる*/
 			session = request.getSession(false);
@@ -174,7 +175,7 @@ public class KigyoServlet extends HttpServlet {
 			ki.setAddress(request.getParameter("address"));
 
 			session.setAttribute("KigyoInfo",ki);
-			page = "/kigyoTouroku/kigyoTourokuKakunin.jsp";
+
 		}
 
 		//企業登録
@@ -192,13 +193,13 @@ public class KigyoServlet extends HttpServlet {
 				e.printStackTrace();
 			}
 
-			page = "/menu/Menu.jsp";
+			page = "/menu/msg.jsp";
 		}
 
 		//企業削除
 		if( request.getParameter("kigyoDelete") != null ){
 
-			page = "/menu/Menu.jsp";
+			page = "/menu/msg.jsp";
 			try {
 				km.kigyoDBDelete(Integer.parseInt(request.getParameter("id")));
 			} catch (Exception e) {

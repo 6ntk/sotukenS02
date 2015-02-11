@@ -46,7 +46,7 @@ public class TempServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String page = "/menu/Menu.jsp";
+		String page = "/menu/msg.jsp";
 
 		String pageF = request.getParameter("page");
 
@@ -194,7 +194,7 @@ public class TempServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, NumberFormatException {
 		request.setCharacterEncoding("utf-8");
-			String page = "/menu/Menu.jsp";
+			String page = "/menu/msg.jsp";
 
 			//削除
 			if(request.getParameter("deleteBtn") != null){
@@ -285,7 +285,7 @@ public class TempServlet extends HttpServlet {
 			//一時表更新確認
 			if( request.getParameter("updateKakuninTouroku") != null ){
 
-				page = "/menu/Menu.jsp";
+				page = "/menu/msg.jsp";
 
 				session = request.getSession(false);
 

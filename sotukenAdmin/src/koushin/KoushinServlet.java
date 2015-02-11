@@ -194,7 +194,7 @@ public class KoushinServlet extends HttpServlet {
 		//報告書削除
 		if( request.getParameter("deleteBtn") != null ){
 
-			page = "/menu/Menu.jsp";
+			page = "/menu/msg.jsp";
 
 			try {
 				km.jukenDelete(Integer.parseInt(request.getParameter("juId")));
@@ -281,7 +281,7 @@ public class KoushinServlet extends HttpServlet {
 		//報告書更新確認
 		if( request.getParameter("updateKettei") != null ){
 
-			page = "/menu/Menu.jsp";
+			page = "/menu/msg.jsp";
 			/*sessionからとってくる*/
 			session = request.getSession(false);
 			jhi = (JukenHoukokuInfo) session.getAttribute("JukenHoukokuInfo");

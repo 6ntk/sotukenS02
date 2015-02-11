@@ -43,7 +43,7 @@
 		</tr>
 		<tr>
 			<th>名前</th>
-			<td>${km.ui.sex}</td>
+			<td>${km.ui.name}</td>
 		</tr>
 
 		<!-- 企業情報 -->

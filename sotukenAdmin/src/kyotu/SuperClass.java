@@ -55,8 +55,6 @@ public class SuperClass extends DBAccess {
 		resultMsg = "";
 	}
 
-
-
 	public void setSelectUserAllSql(String selectUserAllSql) {
 		this.selectUserAllSql = selectUserAllSql;
 	}

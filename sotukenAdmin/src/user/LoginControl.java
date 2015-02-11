@@ -80,7 +80,7 @@ public class LoginControl extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String errPath = "/sotukenAdmin/AdminLogin/login.jsp";
-		String path = "/sotukenAdmin/KensakuServlet";
+		String path = "/sotukenAdmin/TopServlet";
 
 		session = request.getSession(true);
 
@@ -94,7 +94,7 @@ public class LoginControl extends HttpServlet {
 
 			if(request.getParameter("page") != null){
 				errPath = "/sotukenAdmin/StudentLogin/login.jsp";
-				path = "/sotukenAdmin/StudentServlet";
+				path = "/sotukenAdmin/StudentServlet?page=top";
 				searchUser =
 						udbm.userDBSearch(userInfo, UserDBManager.USER_STUDENT);
 			}else{
