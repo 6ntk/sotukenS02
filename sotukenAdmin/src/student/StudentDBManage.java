@@ -8,7 +8,7 @@ import kyotu.SuperClass;
 public class StudentDBManage extends SuperClass{
 
 	private String selectKigyoAllSql ="select * from kigyo";
-	private String jukenKigyoAllSql = "select juId,syuNum,sex,name,DATE_FORMAT(teiDate, '%Y/%m/%d %H:%i:%s') teiDate,sotuDate,juken.id,kigyoName,nanji from users join juken on users.gakuseki=juken.gakuseki join kigyo on juken.id=kigyo.id where users.gakuseki=? order by teiDate desc limit 30";
+	private String jukenKigyoAllSql = "select juId,syuNum,sex,name,DATE_FORMAT(teiDate, '%Y/%m/%d %H:%i:%s') teiDate,sotuDate,juken.id,kigyoName,nanji from users join juken on users.gakuseki=juken.gakuseki join kigyo on juken.id=kigyo.id where users.gakuseki=? order by teiDate desc";
 
 
 	public StudentDBManage() {

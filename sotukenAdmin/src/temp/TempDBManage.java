@@ -9,7 +9,6 @@ public class TempDBManage extends SuperClass{
 
 	private String jukenDeleteSql = "delete from temp where juId=?";
 	private String jukenSelectSql = "select juId,DATE_FORMAT(teiDate, '%Y/%m/%d %H:%i:%s') teiDate,gakuseki,id,nanji,DATE_FORMAT(dateFrom, '%Y/%m/%d %H:%i') dateFrom,DATE_FORMAT(dateTo, '%Y/%m/%d %H:%i') dateTo,testSyu,DATE_FORMAT(tutiDate, '%Y/%m/%d %H:%i') tutiDate,toGa,ippanKamoku,ippanTime,senmonKamoku,senmonTime,sonota,sonoTime,sikenComment,theme,bunTime,bunRyo,kanseido,kensaSyu,kensaTime,kensaComment,menNin1,menNin2,menKatati,menTime,sitsuComment,hanseiComment,kenComment,jogen from temp where juId=?";
-	private String jukenAllSql = "select juId,syuNum,sex,name,DATE_FORMAT(teiDate, '%Y/%m/%d %H:%i:%s') teiDate,sotuDate,temp.id,kigyoName,nanji from users join temp on users.gakuseki=temp.gakuseki join kigyo on temp.id=kigyo.id";
 	private String selectKigyoAllSql ="select * from kigyo";
 	private String jukenMaeSql = "select * from kigyo where kigyoName like ?";
 	private String jukenZenbuSql = "select * from kigyo where kigyoName=?";

@@ -26,29 +26,27 @@
 </head>
 <body>
 
-<%@include file="../../menu/admin_menu.jsp" %>
+<%@include file="../../menu/student_menu.jsp" %>
 <div id="wrapper">
 <h1>トップ</h1>
 
-<h2>更新履歴</h2>
+<h2>${loginInfo.name}さんの更新履歴</h2>
 <table id="table1" class="table01">
 	<thead>
 	<tr id="tr1">
-		<th style="width:25%" align="left">提出日時</th>
-		<th style="width:21%" align="left">受験ID</th>
-		<th style="width:21%" align="left">企業名</th>
-		<th style="width:21%" align="left">何次試験</th>
-		<th style="width:21%" align="left">卒業年度</th>
+		<th style="width:40%" align="left">提出日時</th>
+		<th style="width:20%" align="left">受験ID</th>
+		<th style="width:20%" align="left">企業名</th>
+		<th style="width:20%" align="left">何次試験</th>
 	</tr>
 	</thead>
 	<tbody>
 	<c:forEach items="${sm.ji}" var="item">
 	<tr>
-		<td style="width:25%"><a href="/sotukenAdmin/StudentServlet?page=syosai&juId=${item.juId }">${item.teiDate }</a></td>
-		<td style="width:21%" ><a href="/sotukenAdmin/StudentServlet?page=syosai&juId=${item.juId }">${item.juId }</a></td>
-		<td style="width:21%" ><a href="/sotukenAdmin/StudentServlet?page=syosai&juId=${item.juId }">${item.kigyoName }</a></td>
-		<td style="width:21%" ><a href="/sotukenAdmin/StudentServlet?page=syosai&juId=${item.juId }">${item.nanji }</a></td>
-		<td style="width:21%" ><a href="/sotukenAdmin/StudentServlet?page=syosai&juId=${item.juId }">${item.sotuDate }</a></td>
+		<td style="width:40%"><a href="/sotukenAdmin/StudentServlet?page=syosai&juId=${item.juId }">${item.teiDate }</a></td>
+		<td style="width:20%" ><a href="/sotukenAdmin/StudentServlet?page=syosai&juId=${item.juId }">${item.juId }</a></td>
+		<td style="width:20%" ><a href="/sotukenAdmin/StudentServlet?page=syosai&juId=${item.juId }">${item.kigyoName }</a></td>
+		<td style="width:20%" ><a href="/sotukenAdmin/StudentServlet?page=syosai&juId=${item.juId }">${item.nanji }</a></td>
 	</tr>
 	</c:forEach>
 	</tbody>

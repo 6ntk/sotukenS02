@@ -56,7 +56,7 @@
 		</tr>
 		<tr>
 			<th>郵便番号<br />(任意)</th>
-			<td><input type="text" name="zip" class="kigyoInput" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','address','address');"/></td>
+			<td><input type="text" name="zip" class="kigyoInput" maxlength="8" onkeyup="AjaxZip3.zip2addr(this,'','address','address');"/></td>
 		</tr>
 		<tr>
 			<th>住所</th>

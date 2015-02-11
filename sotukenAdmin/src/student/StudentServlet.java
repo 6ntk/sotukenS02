@@ -160,7 +160,8 @@ public class StudentServlet extends HttpServlet {
 						// TODO 自動生成された catch ブロック
 						e.printStackTrace();
 					}
-						break;
+					request.setAttribute("sm",sm);
+					break;
 				default:
 					break;
 			}

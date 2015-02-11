@@ -24,7 +24,7 @@
 		<input class="input" type="text" name="user" />
 		<label><font color="red">（学籍番号7桁）</font></label><br />
 	<div class="form-title">パスワード</div>
-		<input class="input" type="text" name="passwd" /><br />
+		<input class="input" type="password" name="passwd" /><br />
 	<div class="submit-container">
 		<input type="submit" name="submit" value="ログインして、受験報告書Siteへ行く" class="button" />
 		<br/>${errMsg }
