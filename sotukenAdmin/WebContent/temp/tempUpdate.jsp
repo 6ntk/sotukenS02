@@ -47,12 +47,9 @@ $(function(){
 <!-- tool -->
 <script type="text/javascript" src="/sotukenAdmin/js/tool.js"></script>
 
-
-
 <!-- css -->
 <link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/form.css"/>
 <link rel="stylesheet" href="/sotukenAdmin/css/jquery.datetimepicker.css" />
-
 
 <title>一時表</title>
 
