@@ -22,7 +22,7 @@
 <link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/site.css"/>
 <link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/jquery.dataTables.css"/>
 
-<title>Top</title>
+<title>トップ</title>
 </head>
 <body>
 
