@@ -28,9 +28,11 @@
 
 <%@include file="../../menu/student_menu.jsp" %>
 <div id="wrapper">
+
 <h1>トップ</h1>
 
 <h2>${loginInfo.name}さんの更新履歴</h2>
+
 <table id="table1" class="table01">
 	<thead>
 	<tr id="tr1">
@@ -51,7 +53,9 @@
 	</c:forEach>
 	</tbody>
 </table>
-${km.resultMsg }
+
+<h2>${km.resultMsg }</h2>
+
 <hr />
 
 <form>

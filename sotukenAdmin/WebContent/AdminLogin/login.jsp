@@ -9,7 +9,7 @@
 <!-- css -->
 <link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/login.css"/>
 
-<title>受験報告書</title>
+<title>受験報告書(管理者)</title>
 </head>
 <body>
 

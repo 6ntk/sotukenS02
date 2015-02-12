@@ -20,6 +20,8 @@
 <p><a href="/sotukenAdmin/Student/kensaku/kensaku.jsp">企業検索</a></p>
 <p><a href="/sotukenAdmin/Student/houkoku/houkoku.jsp">受験報告登録</a></p>
 <p><a href="/sotukenAdmin/LoginControl?state=student">ログアウト</a></p>
-${tm.resultMsg }
+
+<h2>${tm.resultMsg }</h2>
+
 </body>
 </html>

@@ -20,13 +20,14 @@
 <link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/jquery.dataTables.css"/>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>ユーザー一覧</title>
+<title>受験報告書</title>
 </head>
 <body>
 <%@include file="../../menu/admin_menu.jsp" %>
 
 
-<h1>ユーザー一覧</h1>
+<h1>受験報告書 ユーザー一覧</h1>
+
 <table id="table1" class="table01">
 	<thead>
 	<tr id="tr1">

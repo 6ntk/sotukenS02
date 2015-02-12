@@ -22,12 +22,12 @@
 <link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/site.css"/>
 <link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/jquery.dataTables.css"/>
 
-<title>ユーザー一覧</title>
+<title>ユーザー更新</title>
 </head>
 <body>
 <%@include file="../../menu/admin_menu.jsp" %>
 
-<h1>ユーザー一覧</h1>
+<h1>ユーザー更新</h1>
 
 <table id="table1" class="table01">
 	<thead>

@@ -57,7 +57,9 @@
 	</c:forEach>
 	</tbody>
 </table>
-${km.resultMsg }
+
+<h2>${km.resultMsg }</h2>
+
 <hr />
 
 <form>

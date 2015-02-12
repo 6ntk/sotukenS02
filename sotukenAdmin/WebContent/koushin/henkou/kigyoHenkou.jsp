@@ -25,7 +25,7 @@
 <body>
 <%@include file="../../menu/admin_menu.jsp" %>
 
-<h1>企業変更</h1>
+<h1>企業情報 変更</h1>
 
 <!-- 企業全表示ボタン -->
 <div id="level">

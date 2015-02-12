@@ -22,7 +22,7 @@
 <link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/site.css"/>
 <link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/jquery.dataTables.css"/>
 
-<title>ユーザー一覧</title>
+<title>一時表</title>
 </head>
 <body>
 <%@include file="../../menu/admin_menu.jsp" %>
