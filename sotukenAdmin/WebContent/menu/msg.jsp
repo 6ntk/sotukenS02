@@ -14,7 +14,17 @@
 
 <%@include file="../menu/admin_menu.jsp" %>
 
-${km.resultMsg }
-${tm.resultMsg }
+<div id="wrapper">
+
+	<!-- 企業登録・変更・削除､報告書登録・変更・削除 完了通知-->
+	<h1>${km.resultMsg }</h1>
+
+	<!-- 一時表 -> 本データベース登録 完了通知 -->
+	<h1>${tm.resultMsg }</h1>
+
+	<input type="button" value="戻 る" class="button" onclick="location.href='/sotukenAdmin/TopServlet'" />
+
+</div>
+
 </body>
 </html>
