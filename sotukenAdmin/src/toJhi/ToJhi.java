@@ -5,21 +5,27 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import juken.JukenHoukokuInfo;
+import error.ErrorManager;
 
 public class ToJhi extends HttpServlet {
 
 	private JukenHoukokuInfo jhi;
+	private ErrorManager em;
+	private String page;
+
 
 	public ToJhi() {
 		super();
 		jhi = new JukenHoukokuInfo();
+		em = new ErrorManager();
+
 	}
 
 	public JukenHoukokuInfo getJhi() {
 		return jhi;
 	}
 
-	public void toJhi(HttpServletRequest request, HttpServletResponse response,JukenHoukokuInfo jhi){
+	public String toJhi(HttpServletRequest request, HttpServletResponse response,JukenHoukokuInfo jhi){
 
 		//StringJoinの区切り文字
 		String separator = ",";
@@ -284,9 +290,16 @@ public class ToJhi extends HttpServlet {
 			jhi.setJogen(request.getParameter("jogen"));
 		} catch (Exception e) {
 			// TODO 自動生成された catch ブロック
-			e.printStackTrace();
+			page = "/ErrorPage/error.jsp";
+
+			em.error("insertKakunin");
+
+			request.setAttribute("em", em);
+
+			return page;
 		}
 		this.jhi = jhi;
+		return "1";
 	}
 
 }
