@@ -2,8 +2,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-   <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-   <fmt:setBundle basename="res.msg" var="msg" />
+   
+   
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -20,13 +20,14 @@
 <link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/jquery.dataTables.css"/>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>ユーザー一覧</title>
+<title>受験報告書</title>
 </head>
 <body>
 <%@include file="../../menu/admin_menu.jsp" %>
 
 
-<h1>ユーザー一覧</h1>
+<h1>受験報告書 ユーザー一覧</h1>
+
 <table id="table1" class="table01">
 	<thead>
 	<tr id="tr1">
