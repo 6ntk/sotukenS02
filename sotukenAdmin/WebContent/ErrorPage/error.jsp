@@ -21,10 +21,12 @@
 
 ${em.errMsg }
 
-<form  method="post">
-	<input type="button" value="戻る" onclick="history.back()" />
+<div id="wrapper">
 
+<form  method="post">
+<input type="button" value="戻 る" onclick="history.back()" />
 </form>
 
+</div>
 </body>
 </html>

@@ -6,7 +6,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<!-- <script type="text/javascript" src="/sotukenAdmin/js/jquery-2.1.1.min.js"></script> -->
 <script type="text/javascript" src="/sotukenAdmin/js/jquery-1.11.0.min.js"></script>
 <!-- datetimepicker -->
 <script src="/sotukenAdmin/js/jquery.datetimepicker.js"></script>
@@ -22,7 +21,7 @@
 
 <title>受験報告書</title>
 </head>
-<body onload="setupTextareaDes();">
+<body>
 
 <%@include file="../menu/admin_menu.jsp" %>
 

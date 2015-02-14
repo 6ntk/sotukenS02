@@ -5,11 +5,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>logout</title>
+
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/logout.css"/>
+
+<title>ログアウト</title>
 </head>
 <body>
+
 <h1>ログアウト</h1>
-<p>ログアウトしました</p>
-<p ><a href="/sotukenAdmin/StudentLogin/login.jsp">ログイン画面にもどる</a></p>
+
+<div id="wrapper">
+
+<h2>ログアウトしました</h2>
+
+<form  method="post">
+<input type="button" value="ログイン画面へ戻る" class="button" onclick="location.href='/sotukenAdmin/StudentLogin/login.jsp'" />
+</form>
+
+</div>
 </body>
 </html>

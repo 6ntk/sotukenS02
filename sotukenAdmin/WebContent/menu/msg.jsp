@@ -22,7 +22,7 @@
 	<!-- 一時表 -> 本データベース登録 完了通知 -->
 	<h1>${tm.resultMsg }</h1>
 
-	<input type="button" value="戻 る" class="button" onclick="location.href='/sotukenAdmin/TopServlet'" />
+	<input type="button" value="トップへ戻る" class="button" onclick="location.href='/sotukenAdmin/TopServlet'" />
 
 </div>
 
