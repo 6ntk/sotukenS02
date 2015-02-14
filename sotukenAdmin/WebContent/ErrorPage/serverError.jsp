@@ -24,8 +24,8 @@
 ${em.errMsg }
 
 <form  method="post">
-<input type="button" value="戻 る" onclick="history.back()" />
-<input type="button" value="ログイン画面へ戻る" class="button" onclick="location.href='/sotukenAdmin/StudentLogin/login.jsp'" />
+<input type="button" value="戻 る" class="exButton" onclick="history.back()" />
+<input type="button" value="ログイン画面へ戻る" class="exButton" onclick="location.href='/sotukenAdmin/StudentLogin/login.jsp'" />
 </form>
 
 </div>

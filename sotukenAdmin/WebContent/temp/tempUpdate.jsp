@@ -154,7 +154,7 @@ ${tm.resultMsg }
 			<td rowspan="3" width="10"><b>結果通知</b></td>
 			<th>学校宛</th>
 			<td><input type="radio" name="toGa" value="1" />郵送
-			<input type="radio" name="toGa" value="2" />TEL
+			<input type="radio" name="toGa" value="2" />電話
 			</td>
 
 		</tr>
@@ -162,7 +162,7 @@ ${tm.resultMsg }
 		<tr>
 			<th>本人宛</th>
 			<td><input type="radio" name="toGa" value="3" />郵送
-			<input type="radio" name="toGa" value="4" />TEL</td>
+			<input type="radio" name="toGa" value="4" />電話</td>
 		</tr>
 
 		<tr>

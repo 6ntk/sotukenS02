@@ -119,7 +119,7 @@
 			<td rowspan="3" width="10"><b>結果通知</b></td>
 			<th>学校宛</th>
 			<td><label for="toGa1"><input type="radio" id="toGa1" name="toGa" value="1" />郵送</label>
-			<label for="toGa2"><input type="radio" id="toGa2" name="toGa" value="2" />TEL</label>
+			<label for="toGa2"><input type="radio" id="toGa2" name="toGa" value="2" />電話</label>
 			</td>
 
 		</tr>
@@ -127,7 +127,7 @@
 		<tr>
 			<th>本人宛</th>
 			<td><label for="toGa3"><input type="radio" id="toGa3" name="toGa" value="3" />郵送</label>
-			<label for="toGa4"><input type="radio" id="toGa4" name="toGa" value="4" />TEL</label>
+			<label for="toGa4"><input type="radio" id="toGa4" name="toGa" value="4" />電話</label>
 			</td>
 		</tr>
 
