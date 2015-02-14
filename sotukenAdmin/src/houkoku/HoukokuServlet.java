@@ -15,7 +15,6 @@ import kigyo.KigyoDBManage;
 import temp.TempDBManage;
 import toJhi.ToJhi;
 import toNull.ToNull;
-import error.ErrorManager;
 
 /**
  * Servlet implementation class AdminServlet
@@ -29,7 +28,6 @@ public class HoukokuServlet extends HttpServlet {
     private ToJhi tojhi;
     private ToNull tn;
     private String page;
-    private ErrorManager em;
     private TempDBManage tm;
 
 	/**
@@ -44,10 +42,14 @@ public class HoukokuServlet extends HttpServlet {
         tn = new ToNull();
         jhi = new JukenHoukokuInfo();
         tojhi = new ToJhi();
-        em = new ErrorManager();
         tm.setResultMsg("");
 
     }
+
+	public void setPage(String page) {
+		this.page = page;
+	}
+
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
@@ -184,19 +186,11 @@ public class HoukokuServlet extends HttpServlet {
 			session = request.getSession(false);
 			jhi = (JukenHoukokuInfo) session.getAttribute("JukenHoukokuInfo");
 
-			//jhiがとってこれなかったら
-			if(jhi == null){
-				page = "/ErroPage/error.jsp";
-
-				em.error("insertKakunin");
-
-				request.setAttribute("em", em);
-
-				RequestDispatcher disp =request.getRequestDispatcher(page);
-				disp.forward(request, response);
+			String error = tojhi.toJhi(request, response,jhi);
+			if(error != "1"){
+				page = error;
 			}
 
-			tojhi.toJhi(request, response,jhi);
 
 			session.setAttribute("JukenHoukokuInfo",tojhi.getJhi());
 			tn.toNull(tojhi.getJhi());

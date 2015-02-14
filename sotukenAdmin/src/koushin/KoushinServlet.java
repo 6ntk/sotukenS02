@@ -261,7 +261,10 @@ public class KoushinServlet extends HttpServlet {
 				disp.forward(request, response);
 			}
 
-			tojhi.toJhi(request, response,jhi);
+			String error = tojhi.toJhi(request, response,jhi);
+			if(error != "1"){
+				page = error;
+			}
 			tn.toNull(jhi);
 
 			session.setAttribute("JukenHoukokuInfo", jhi);

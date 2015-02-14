@@ -266,7 +266,10 @@ public class TempServlet extends HttpServlet {
 				}else{
 					page = "/temp/tempUpdateConf.jsp";
 
-					tojhi.toJhi(request, response,jhi);
+					String error = tojhi.toJhi(request, response,jhi);
+					if(error != "1"){
+						page = error;
+					}
 
 					tn.toNull(jhi);
 

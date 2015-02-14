@@ -114,3 +114,118 @@ a {
 	border: 1px solid #4A3C8C;
 	border-radius: 2px;
 }
+=======
+@CHARSET "UTF-8";
+
+body {
+	margin:0;
+     padding:0;
+     border:0;
+     outline:0;
+     vertical-align:baseline;
+     background:transparent;
+     font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+}
+
+.input,.button{
+     vertical-align:middle;
+     font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+     position:relative;
+     margin: 2px 2px 2px 2px;
+     *margin-right:3px;
+     top:-1px;
+}
+
+h1{
+	color: #3e84b5;
+	text-shadow: 0 2px 1px #ffffff;
+	font-size: 40px;
+	text-align:center;
+	padding:6px;
+}
+
+h2 {
+	color: #3e84b5;
+	text-shadow: 0 2px 1px #ffffff;
+	font-size:20px;
+	margin: 0 0 10px 0;
+	text-align:center;
+}
+
+#wrapper {
+	width:500px;
+	margin:0 auto;
+	padding:30px 20px;
+}
+
+a {
+	outline:none;
+	border-style:none;
+}
+
+.form-container {
+   border: 1px solid #4b3c8c;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+   font-family: 'Helvetica Neue',Helvetica,sans-serif;
+   text-decoration: none;
+   vertical-align: middle;
+   padding:20px;
+
+   }
+
+.form-title {
+   margin-bottom:10px;
+}
+
+.submit-container {
+   margin:8px 0;
+   text-align:center;
+}
+
+.form-field {
+/*    border: 1px solid #ffffff;
+   background: #ffffff;
+   border-radius: 2px;
+   color: #000000; */
+   padding:8px;
+   margin-bottom:20px;
+}
+.form-field:focus {
+   background: #fff;
+   color: #000000;
+   }
+
+.input{
+	border:0;
+	padding:10px;
+	width:300px;
+	height:20px;
+    line-height: 15px;
+	font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+	font-size: 120%;
+	color:#000;
+	border:solid 1px #4A3C8C;
+	border-radius: 2px;
+}
+
+.button {
+	padding:10px;
+	font-size: 100%;
+	font-weight:bold;
+	font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+	overflow:visible;
+
+	color: #4A3C8C;
+	background: #fff;
+	border: 1px solid #4A3C8C;
+	border-radius: 2px;
+}
+.button:hover {
+	background: #4A3C8C;
+	color:#fff;
+	border: 1px solid #4A3C8C;
+	border-radius: 2px;
+}}
+>>>>>>> refs/heads/master

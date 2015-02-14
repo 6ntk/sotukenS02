@@ -219,7 +219,10 @@ public class StudentServlet extends HttpServlet {
 			session = request.getSession(false);
 			jhi = (JukenHoukokuInfo) session.getAttribute("JukenHoukokuInfo");
 
-			tojhi.toJhi(request, response,jhi);
+			String error = tojhi.toJhi(request, response,jhi);
+			if(error != "1"){
+				page = error;
+			}
 
 			tn.toNull(tojhi.getJhi());
 
