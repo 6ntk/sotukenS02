@@ -5,7 +5,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
 
 <%@ page session="true"%>
 <%
@@ -14,7 +14,7 @@
 	/* 	JukenHoukokuInfo jhi = (JukenHoukokuInfo)session.getAttribute("JukenHoukokuInfo"); */
 %>
 
-<fmt:setBundle basename="res.msg" var="msg" />
+
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -160,7 +160,7 @@ $(function(){
 			<td rowspan="3" width="10"><b>結果通知</b></td>
 			<th>学校宛</th>
 			<td><input type="radio" name="toGa" value="1" />郵送
-			<input type="radio" name="toGa" value="2" />TEL
+			<input type="radio" name="toGa" value="2" />電話
 			</td>
 
 		</tr>
@@ -168,7 +168,7 @@ $(function(){
 		<tr>
 			<th>本人宛</th>
 			<td><input type="radio" name="toGa" value="3" />郵送
-			<input type="radio" name="toGa" value="4" />TEL</td>
+			<input type="radio" name="toGa" value="4" />電話</td>
 		</tr>
 
 		<tr>

@@ -7,17 +7,22 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 <!-- css -->
-<link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/login.css"/>
+<link rel="stylesheet" type="text/css" href="/sotukenAdmin/css/logout.css"/>
 
-<title>logout</title>
+<title>ログアウト</title>
 </head>
 <body>
 
 <h1>ログアウト</h1>
 
-<p>ログアウトしました</p>
+<div id="wrapper">
 
-<p ><a href="/sotukenAdmin/AdminLogin/login.jsp">ログイン画面にもどる</a></p>
+<h2>ログアウトしました</h2>
 
+<form  method="post">
+<input type="button" value="ログイン画面へ戻る" class="button" onclick="location.href='/sotukenAdmin/AdminLogin/login.jsp'" />
+</form>
+
+</div>
 </body>
 </html>
